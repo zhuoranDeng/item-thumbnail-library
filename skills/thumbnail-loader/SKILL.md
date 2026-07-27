@@ -101,7 +101,7 @@ Do **not** fill an RFY grid with only one subcategory when the page is the major
 | Clothing → Sweaters | `sweaters/` | Sweaters / hoodies |
 | Clothing → other subtypes | `clothing/` | Legacy mixed clothing until split into subtype folders |
 | Accessories → * (all slots) | `accessories/` | Head/Face/Neck/…/Gear |
-| Animations → Bundles, Emotes | `animation/` | Grey rig poses |
+| Animations → Bundles, Emotes | `animation/` | Grey rig poses (product placement; not bleed) |
 | Backgrounds | `backgrounds/` | Avatar-preview environments (bleed media) |
 | Makeup → Eyes | `eyes/` | Eye cosmetics (bleed media) |
 | Makeup → Lips | `lips/` | Lip cosmetics (bleed media) |
@@ -116,7 +116,8 @@ When filling T-shirts page: use `t-shirts/` only.
 When filling Sweaters page: use `sweaters/` only.  
 When filling Bodies RFY: mix Full bodies + Hair + Heads (`fullbodies/` + `hair/` + `heads/`).  
 When filling Accessories RFY: mix across `accessories/`.  
-When filling Animations RFY: mix bundles + emotes from `animation/`.  
+When filling Animations RFY / Emotes: use `animation/` (product placement — contain + inset, not bleed).  
+When Bundles assets exist in the same folder, mix them with Emotes for Animations RFY.  
 When filling Backgrounds RFY / page: use `backgrounds/` (bleed + preview sync).  
 When filling Makeup RFY: mix Makeup subtype folders (`eyes/`, `lips/`, and future faces/eyelashes/eyebrows) — bleed.  
 When filling Eyes page: use `eyes/` only.  

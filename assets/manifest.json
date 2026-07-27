@@ -95,7 +95,7 @@
     "animation": {
       "path": "animation",
       "count": 20,
-      "label": "Emotes, animation packs"
+      "label": "Emotes / animation poses (grey rig, 1:1 product placement)"
     },
     "backgrounds": {
       "path": "backgrounds",
@@ -1020,126 +1020,6 @@
       "relativePath": "accessories/20-gunmetal-skeletal-hands.png"
     },
     {
-      "id": "animation/01-grey-strut-walk",
-      "category": "animation",
-      "filename": "01-grey-strut-walk.png",
-      "relativePath": "animation/01-grey-strut-walk.png"
-    },
-    {
-      "id": "animation/02-grey-hands-on-hips",
-      "category": "animation",
-      "filename": "02-grey-hands-on-hips.png",
-      "relativePath": "animation/02-grey-hands-on-hips.png"
-    },
-    {
-      "id": "animation/03-grey-crossed-leg-lean",
-      "category": "animation",
-      "filename": "03-grey-crossed-leg-lean.png",
-      "relativePath": "animation/03-grey-crossed-leg-lean.png"
-    },
-    {
-      "id": "animation/04-grey-twisted-knee-tuck",
-      "category": "animation",
-      "filename": "04-grey-twisted-knee-tuck.png",
-      "relativePath": "animation/04-grey-twisted-knee-tuck.png"
-    },
-    {
-      "id": "animation/05-grey-running-stride",
-      "category": "animation",
-      "filename": "05-grey-running-stride.png",
-      "relativePath": "animation/05-grey-running-stride.png"
-    },
-    {
-      "id": "animation/06-grey-hands-behind-back",
-      "category": "animation",
-      "filename": "06-grey-hands-behind-back.png",
-      "relativePath": "animation/06-grey-hands-behind-back.png"
-    },
-    {
-      "id": "animation/07-grey-confident-wide-stance",
-      "category": "animation",
-      "filename": "07-grey-confident-wide-stance.png",
-      "relativePath": "animation/07-grey-confident-wide-stance.png"
-    },
-    {
-      "id": "animation/08-grey-crouched-combat-ready",
-      "category": "animation",
-      "filename": "08-grey-crouched-combat-ready.png",
-      "relativePath": "animation/08-grey-crouched-combat-ready.png"
-    },
-    {
-      "id": "animation/09-grey-lean-back-hip-rest",
-      "category": "animation",
-      "filename": "09-grey-lean-back-hip-rest.png",
-      "relativePath": "animation/09-grey-lean-back-hip-rest.png"
-    },
-    {
-      "id": "animation/10-lavender-one-leg-dance",
-      "category": "animation",
-      "filename": "10-lavender-one-leg-dance.png",
-      "relativePath": "animation/10-lavender-one-leg-dance.png"
-    },
-    {
-      "id": "animation/11-grey-asymmetric-stride",
-      "category": "animation",
-      "filename": "11-grey-asymmetric-stride.png",
-      "relativePath": "animation/11-grey-asymmetric-stride.png"
-    },
-    {
-      "id": "animation/12-grey-walking-cycle",
-      "category": "animation",
-      "filename": "12-grey-walking-cycle.png",
-      "relativePath": "animation/12-grey-walking-cycle.png"
-    },
-    {
-      "id": "animation/13-lavender-step-lift",
-      "category": "animation",
-      "filename": "13-lavender-step-lift.png",
-      "relativePath": "animation/13-lavender-step-lift.png"
-    },
-    {
-      "id": "animation/14-grey-akimbo-wide-stance",
-      "category": "animation",
-      "filename": "14-grey-akimbo-wide-stance.png",
-      "relativePath": "animation/14-grey-akimbo-wide-stance.png"
-    },
-    {
-      "id": "animation/15-grey-run-arm-swing",
-      "category": "animation",
-      "filename": "15-grey-run-arm-swing.png",
-      "relativePath": "animation/15-grey-run-arm-swing.png"
-    },
-    {
-      "id": "animation/16-bluegrey-tilted-stance",
-      "category": "animation",
-      "filename": "16-bluegrey-tilted-stance.png",
-      "relativePath": "animation/16-bluegrey-tilted-stance.png"
-    },
-    {
-      "id": "animation/17-grey-arms-out-lean-back",
-      "category": "animation",
-      "filename": "17-grey-arms-out-lean-back.png",
-      "relativePath": "animation/17-grey-arms-out-lean-back.png"
-    },
-    {
-      "id": "animation/18-grey-fist-pump-emote",
-      "category": "animation",
-      "filename": "18-grey-fist-pump-emote.png",
-      "relativePath": "animation/18-grey-fist-pump-emote.png"
-    },
-    {
-      "id": "animation/19-lavender-mid-run",
-      "category": "animation",
-      "filename": "19-lavender-mid-run.png",
-      "relativePath": "animation/19-lavender-mid-run.png"
-    },
-    {
-      "id": "animation/20-lavender-hands-behind-look-up",
-      "category": "animation",
-      "filename": "20-lavender-hands-behind-look-up.png",
-      "relativePath": "animation/20-lavender-hands-behind-look-up.png"
-    },
-    {
       "id": "backgrounds/01-pastel-studio-gradient",
       "category": "backgrounds",
       "filename": "01-pastel-studio-gradient.png",
@@ -1737,6 +1617,146 @@
       "filename": "11-summer-in-brazil.png",
       "relativePath": "game-thumbnails/11-summer-in-brazil.png",
       "aspectRatio": "16:9"
+    },
+    {
+      "id": "animation/01-grey-mid-motion-lean",
+      "category": "animation",
+      "filename": "01-grey-mid-motion-lean.png",
+      "relativePath": "animation/01-grey-mid-motion-lean.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/02-grey-dance-kick",
+      "category": "animation",
+      "filename": "02-grey-dance-kick.png",
+      "relativePath": "animation/02-grey-dance-kick.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/03-grey-walk-stride",
+      "category": "animation",
+      "filename": "03-grey-walk-stride.png",
+      "relativePath": "animation/03-grey-walk-stride.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/04-grey-standing-neutral",
+      "category": "animation",
+      "filename": "04-grey-standing-neutral.png",
+      "relativePath": "animation/04-grey-standing-neutral.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/05-grey-dance-kick-alt",
+      "category": "animation",
+      "filename": "05-grey-dance-kick-alt.png",
+      "relativePath": "animation/05-grey-dance-kick-alt.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/06-grey-arms-up-wide-stance",
+      "category": "animation",
+      "filename": "06-grey-arms-up-wide-stance.png",
+      "relativePath": "animation/06-grey-arms-up-wide-stance.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/07-grey-hands-behind-back-lean",
+      "category": "animation",
+      "filename": "07-grey-hands-behind-back-lean.png",
+      "relativePath": "animation/07-grey-hands-behind-back-lean.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/08-grey-hands-behind-standing",
+      "category": "animation",
+      "filename": "08-grey-hands-behind-standing.png",
+      "relativePath": "animation/08-grey-hands-behind-standing.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/09-grey-jaunty-kick-back",
+      "category": "animation",
+      "filename": "09-grey-jaunty-kick-back.png",
+      "relativePath": "animation/09-grey-jaunty-kick-back.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/10-grey-step-arm-out",
+      "category": "animation",
+      "filename": "10-grey-step-arm-out.png",
+      "relativePath": "animation/10-grey-step-arm-out.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/11-grey-arms-raised-celebrate",
+      "category": "animation",
+      "filename": "11-grey-arms-raised-celebrate.png",
+      "relativePath": "animation/11-grey-arms-raised-celebrate.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/12-grey-wave-arm",
+      "category": "animation",
+      "filename": "12-grey-wave-arm.png",
+      "relativePath": "animation/12-grey-wave-arm.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/13-grey-cross-leg-dance",
+      "category": "animation",
+      "filename": "13-grey-cross-leg-dance.png",
+      "relativePath": "animation/13-grey-cross-leg-dance.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/14-grey-situp-crunch",
+      "category": "animation",
+      "filename": "14-grey-situp-crunch.png",
+      "relativePath": "animation/14-grey-situp-crunch.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/15-grey-hand-on-hip",
+      "category": "animation",
+      "filename": "15-grey-hand-on-hip.png",
+      "relativePath": "animation/15-grey-hand-on-hip.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/16-grey-standing-relaxed",
+      "category": "animation",
+      "filename": "16-grey-standing-relaxed.png",
+      "relativePath": "animation/16-grey-standing-relaxed.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/17-grey-fist-pump-emote",
+      "category": "animation",
+      "filename": "17-grey-fist-pump-emote.png",
+      "relativePath": "animation/17-grey-fist-pump-emote.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/18-grey-lean-back-hip",
+      "category": "animation",
+      "filename": "18-grey-lean-back-hip.png",
+      "relativePath": "animation/18-grey-lean-back-hip.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/19-grey-running-stride",
+      "category": "animation",
+      "filename": "19-grey-running-stride.png",
+      "relativePath": "animation/19-grey-running-stride.png",
+      "subcategory": "Emotes"
+    },
+    {
+      "id": "animation/20-grey-akimbo-stance",
+      "category": "animation",
+      "filename": "20-grey-akimbo-stance.png",
+      "relativePath": "animation/20-grey-akimbo-stance.png",
+      "subcategory": "Emotes"
     }
   ]
 }
