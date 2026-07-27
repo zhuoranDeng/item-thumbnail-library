@@ -33,6 +33,8 @@ Restart Cursor (or reload the window) so the skill appears.
 
 `references/marketplace-home.png` is the layout target when filling a marketplace home feed:
 
+![Marketplace home — Recommended for you, Trending styles, Trending item](references/marketplace-home.png)
+
 1. **Recommended for you** — 1:1 mixed catalog items  
 2. **Trending styles** — 2:3 full-body looks from `avatars/`  
 3. **Trending item** — 1:1 mixed catalog items  
