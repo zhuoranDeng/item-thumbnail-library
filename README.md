@@ -1,8 +1,8 @@
 # Item thumbnail library + Thumbnail loader
 
-Portable catalog PNG thumbnails and a Cursor skill that fills placeholder item tiles in any project.
+Real Roblox-style thumbnails plus a Cursor skill that **smart-loads** them into placeholders from UI context — marketplace assets, avatars, profile photos, game thumbnails, and more.
 
-Clone once → install the skill → use **Thumbnail loader** in Cursor. Assets ship in the same repo.
+Clone once → install the skill → say **Thumbnail loader** in Cursor. Assets ship in the same repo.
 
 ## Install
 
@@ -22,6 +22,22 @@ export ITEM_THUMBNAIL_LIBRARY=/path/to/item-thumbnail-library
 
 Restart Cursor (or reload the window) so the skill appears.
 
+## Capability
+
+**Thumbnail loader** reads the surrounding UI (row headers, category filters, tile aspect ratio, component names) and fills placeholders with matching library PNGs — it does not invent images.
+
+Typical contexts:
+
+- **Marketplace assets** — clothing, accessories, bodies, makeup, backgrounds, animations
+- **Avatars / styles** — full-body looks on taller (2:3) tiles
+- **Profile photos** — headshot-style tiles
+- **Game thumbnails** — when the slot context calls for scene or experience-style art (e.g. backgrounds)
+
+Also:
+
+- Major RFY / browse rows → mix child subcategory thumbs; subcategory pages → one folder
+- Copies into the project’s public/static paths so mocks keep working offline
+
 ## Repo layout
 
 ```
@@ -33,28 +49,15 @@ item-thumbnail-library/
 │   ├── sweaters/
 │   ├── avatars/
 │   └── …
-├── skills/
-│   └── thumbnail-loader/
-│       └── SKILL.md
-└── references/
-    └── marketplace-home.png
+└── skills/
+    └── thumbnail-loader/
+        └── SKILL.md
 ```
 
 | Path | Purpose |
 |------|---------|
 | `assets/` | Catalog PNGs by category + `manifest.json` |
 | `skills/thumbnail-loader/SKILL.md` | Cursor **Thumbnail loader** skill |
-| `references/marketplace-home.png` | Visual target for marketplace home rows |
-
-## Marketplace home reference
-
-`references/marketplace-home.png` is the layout target when filling a marketplace home feed:
-
-![Marketplace home — Recommended for you, Trending styles, Trending item](references/marketplace-home.png)
-
-1. **Recommended for you** — 1:1 mixed catalog items  
-2. **Trending styles** — 2:3 full-body looks from `avatars/`  
-3. **Trending item** — 1:1 mixed catalog items  
 
 ## Product hierarchy (for RFY / browse)
 
@@ -119,13 +122,4 @@ cp "$LIB/clothing/01-black-polka-dot-dress.png" /path/to/project/public/design/i
 ln -s "$LIB" /path/to/project/public/thumbnails
 ```
 
-## Cursor skill behavior
-
-Say **Thumbnail loader** (or “fill placeholders”, “load thumbnails”) in Cursor. The skill:
-
-- Infers category from UI context; asks only when ambiguous
-- Major RFY → mixes child subcategory thumbs; subcategory page → one folder
-- **2:3** tiles → `avatars/`; **1:1** → other categories
-- Copies library PNGs into project placeholders (does not invent images)
-
-See `skills/thumbnail-loader/SKILL.md` for full rules.
+See `skills/thumbnail-loader/SKILL.md` for full fill rules.
