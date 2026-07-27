@@ -1,0 +1,1657 @@
+{
+  "name": "item-thumbnail-library",
+  "version": "1.0.0",
+  "description": "Portable Roblox-catalog-style item thumbnails.",
+  "format": {
+    "extension": "png",
+    "typicalSize": "420x420",
+    "background": "black",
+    "naming": "NN-kebab-description.png",
+    "avatarTileRatio": "2:3",
+    "catalogTileRatio": "1:1"
+  },
+  "productHierarchy": {
+    "Bodies": [
+      "Full bodies",
+      "Hair",
+      "Heads"
+    ],
+    "Clothing": [
+      "Shirts",
+      "T-shirts",
+      "Sweaters",
+      "Jackets",
+      "Pants",
+      "Dresses & Skirts",
+      "Bodysuits",
+      "Shorts",
+      "Shoes"
+    ],
+    "Accessories": [
+      "Head",
+      "Face",
+      "Neck",
+      "Shoulder",
+      "Front",
+      "Back",
+      "Waist",
+      "Gear"
+    ],
+    "Backgrounds": [],
+    "Animations": [
+      "Bundles",
+      "Emotes"
+    ],
+    "Makeup": [
+      "Eyes",
+      "Lips",
+      "Faces",
+      "Eyelashes",
+      "Eyebrows"
+    ]
+  },
+  "categories": {
+    "fullbodies": {
+      "path": "fullbodies",
+      "count": 17,
+      "label": "Full bodies / character bundles (Bodies subcategory)"
+    },
+    "hair": {
+      "path": "hair",
+      "count": 20,
+      "label": "Hair and hair+hat sets (Bodies subcategory)"
+    },
+    "heads": {
+      "path": "heads",
+      "count": 20,
+      "label": "Dynamic heads / faces (Bodies subcategory)"
+    },
+    "shirts": {
+      "path": "shirts",
+      "count": 14,
+      "label": "Shirts (Clothing subcategory)"
+    },
+    "t-shirts": {
+      "path": "t-shirts",
+      "count": 17,
+      "label": "T-shirts (Clothing subcategory)"
+    },
+    "sweaters": {
+      "path": "sweaters",
+      "count": 20,
+      "label": "Sweaters / hoodies (Clothing subcategory)"
+    },
+    "clothing": {
+      "path": "clothing",
+      "count": 20,
+      "label": "Mixed clothing (legacy / other subtypes)"
+    },
+    "accessories": {
+      "path": "accessories",
+      "count": 20,
+      "label": "Hats, bags, jewelry, pets, props"
+    },
+    "animation": {
+      "path": "animation",
+      "count": 20,
+      "label": "Emotes, animation packs"
+    },
+    "backgrounds": {
+      "path": "backgrounds",
+      "count": 13,
+      "label": "Avatar preview backgrounds (1:1 tiles; selection updates preview panel)"
+    },
+    "eyes": {
+      "path": "eyes",
+      "count": 17,
+      "label": "Eyes makeup (Makeup subcategory)"
+    },
+    "lips": {
+      "path": "lips",
+      "count": 18,
+      "label": "Lips makeup (Makeup subcategory)"
+    },
+    "profile-photos": {
+      "path": "profile-photos",
+      "count": 11,
+      "label": "Profile photos / headshots"
+    },
+    "avatars": {
+      "path": "avatars",
+      "count": 28,
+      "label": "Full-body avatar characters (2:3 tiles)"
+    }
+  },
+  "assets": [
+    {
+      "id": "fullbodies/01-teal-pigtails-black-base",
+      "category": "fullbodies",
+      "filename": "01-teal-pigtails-black-base.png",
+      "relativePath": "fullbodies/01-teal-pigtails-black-base.png"
+    },
+    {
+      "id": "fullbodies/02-tan-blank-head-black-base",
+      "category": "fullbodies",
+      "filename": "02-tan-blank-head-black-base.png",
+      "relativePath": "fullbodies/02-tan-blank-head-black-base.png"
+    },
+    {
+      "id": "fullbodies/03-black-wavy-hair-purple-eyes",
+      "category": "fullbodies",
+      "filename": "03-black-wavy-hair-purple-eyes.png",
+      "relativePath": "fullbodies/03-black-wavy-hair-purple-eyes.png"
+    },
+    {
+      "id": "fullbodies/04-pink-bob-pink-satin-base",
+      "category": "fullbodies",
+      "filename": "04-pink-bob-pink-satin-base.png",
+      "relativePath": "fullbodies/04-pink-bob-pink-satin-base.png"
+    },
+    {
+      "id": "fullbodies/05-grey-chibi-blue-eyes-white-base",
+      "category": "fullbodies",
+      "filename": "05-grey-chibi-blue-eyes-white-base.png",
+      "relativePath": "fullbodies/05-grey-chibi-blue-eyes-white-base.png"
+    },
+    {
+      "id": "fullbodies/06-lavender-blank-blocky-wide-legs",
+      "category": "fullbodies",
+      "filename": "06-lavender-blank-blocky-wide-legs.png",
+      "relativePath": "fullbodies/06-lavender-blank-blocky-wide-legs.png"
+    },
+    {
+      "id": "fullbodies/07-pale-bald-lashed-black-base",
+      "category": "fullbodies",
+      "filename": "07-pale-bald-lashed-black-base.png",
+      "relativePath": "fullbodies/07-pale-bald-lashed-black-base.png"
+    },
+    {
+      "id": "fullbodies/08-tan-brown-hair-curvy-base",
+      "category": "fullbodies",
+      "filename": "08-tan-brown-hair-curvy-base.png",
+      "relativePath": "fullbodies/08-tan-brown-hair-curvy-base.png"
+    },
+    {
+      "id": "fullbodies/09-pale-black-oval-eyes-blush",
+      "category": "fullbodies",
+      "filename": "09-pale-black-oval-eyes-blush.png",
+      "relativePath": "fullbodies/09-pale-black-oval-eyes-blush.png"
+    },
+    {
+      "id": "fullbodies/10-white-puppy-ears-chibi",
+      "category": "fullbodies",
+      "filename": "10-white-puppy-ears-chibi.png",
+      "relativePath": "fullbodies/10-white-puppy-ears-chibi.png"
+    },
+    {
+      "id": "fullbodies/11-baby-spongebob",
+      "category": "fullbodies",
+      "filename": "11-baby-spongebob.png",
+      "relativePath": "fullbodies/11-baby-spongebob.png"
+    },
+    {
+      "id": "fullbodies/12-brown-monkey-curious-george-a",
+      "category": "fullbodies",
+      "filename": "12-brown-monkey-curious-george-a.png",
+      "relativePath": "fullbodies/12-brown-monkey-curious-george-a.png"
+    },
+    {
+      "id": "fullbodies/13-brown-monkey-curious-george-b",
+      "category": "fullbodies",
+      "filename": "13-brown-monkey-curious-george-b.png",
+      "relativePath": "fullbodies/13-brown-monkey-curious-george-b.png"
+    },
+    {
+      "id": "fullbodies/14-white-buff-muscle-bundle",
+      "category": "fullbodies",
+      "filename": "14-white-buff-muscle-bundle.png",
+      "relativePath": "fullbodies/14-white-buff-muscle-bundle.png"
+    },
+    {
+      "id": "fullbodies/15-lavender-wide-hips-green-eyes",
+      "category": "fullbodies",
+      "filename": "15-lavender-wide-hips-green-eyes.png",
+      "relativePath": "fullbodies/15-lavender-wide-hips-green-eyes.png"
+    },
+    {
+      "id": "fullbodies/16-grey-classic-face-flared-legs",
+      "category": "fullbodies",
+      "filename": "16-grey-classic-face-flared-legs.png",
+      "relativePath": "fullbodies/16-grey-classic-face-flared-legs.png"
+    },
+    {
+      "id": "fullbodies/17-lavender-almond-eyes-slender",
+      "category": "fullbodies",
+      "filename": "17-lavender-almond-eyes-slender.png",
+      "relativePath": "fullbodies/17-lavender-almond-eyes-slender.png"
+    },
+    {
+      "id": "hair/01-brown-wavy-long-hair",
+      "category": "hair",
+      "filename": "01-brown-wavy-long-hair.png",
+      "relativePath": "hair/01-brown-wavy-long-hair.png"
+    },
+    {
+      "id": "hair/02-ash-brown-straight-layered-hair",
+      "category": "hair",
+      "filename": "02-ash-brown-straight-layered-hair.png",
+      "relativePath": "hair/02-ash-brown-straight-layered-hair.png"
+    },
+    {
+      "id": "hair/03-light-brown-messy-wolf-cut",
+      "category": "hair",
+      "filename": "03-light-brown-messy-wolf-cut.png",
+      "relativePath": "hair/03-light-brown-messy-wolf-cut.png"
+    },
+    {
+      "id": "hair/04-ash-brown-shaggy-bangs-hair",
+      "category": "hair",
+      "filename": "04-ash-brown-shaggy-bangs-hair.png",
+      "relativePath": "hair/04-ash-brown-shaggy-bangs-hair.png"
+    },
+    {
+      "id": "hair/05-ash-blonde-wavy-bangs-hair",
+      "category": "hair",
+      "filename": "05-ash-blonde-wavy-bangs-hair.png",
+      "relativePath": "hair/05-ash-blonde-wavy-bangs-hair.png"
+    },
+    {
+      "id": "hair/06-ash-blonde-beret-safety-pins",
+      "category": "hair",
+      "filename": "06-ash-blonde-beret-safety-pins.png",
+      "relativePath": "hair/06-ash-blonde-beret-safety-pins.png"
+    },
+    {
+      "id": "hair/07-brown-half-up-white-claw-clip",
+      "category": "hair",
+      "filename": "07-brown-half-up-white-claw-clip.png",
+      "relativePath": "hair/07-brown-half-up-white-claw-clip.png"
+    },
+    {
+      "id": "hair/08-dark-brown-messy-bun-pink-flowers",
+      "category": "hair",
+      "filename": "08-dark-brown-messy-bun-pink-flowers.png",
+      "relativePath": "hair/08-dark-brown-messy-bun-pink-flowers.png"
+    },
+    {
+      "id": "hair/09-brown-wavy-paisley-bandana",
+      "category": "hair",
+      "filename": "09-brown-wavy-paisley-bandana.png",
+      "relativePath": "hair/09-brown-wavy-paisley-bandana.png"
+    },
+    {
+      "id": "hair/10-ash-blonde-straight-layered-hair",
+      "category": "hair",
+      "filename": "10-ash-blonde-straight-layered-hair.png",
+      "relativePath": "hair/10-ash-blonde-straight-layered-hair.png"
+    },
+    {
+      "id": "hair/11-taupe-messy-side-ponytail",
+      "category": "hair",
+      "filename": "11-taupe-messy-side-ponytail.png",
+      "relativePath": "hair/11-taupe-messy-side-ponytail.png"
+    },
+    {
+      "id": "hair/12-blonde-bubble-braids-yellow-lilies",
+      "category": "hair",
+      "filename": "12-blonde-bubble-braids-yellow-lilies.png",
+      "relativePath": "hair/12-blonde-bubble-braids-yellow-lilies.png"
+    },
+    {
+      "id": "hair/13-ash-blonde-bangs-low-ponytail",
+      "category": "hair",
+      "filename": "13-ash-blonde-bangs-low-ponytail.png",
+      "relativePath": "hair/13-ash-blonde-bangs-low-ponytail.png"
+    },
+    {
+      "id": "hair/14-dark-purple-hime-cut",
+      "category": "hair",
+      "filename": "14-dark-purple-hime-cut.png",
+      "relativePath": "hair/14-dark-purple-hime-cut.png"
+    },
+    {
+      "id": "hair/15-platinum-blonde-bow-headband",
+      "category": "hair",
+      "filename": "15-platinum-blonde-bow-headband.png",
+      "relativePath": "hair/15-platinum-blonde-bow-headband.png"
+    },
+    {
+      "id": "hair/16-silver-twin-tails",
+      "category": "hair",
+      "filename": "16-silver-twin-tails.png",
+      "relativePath": "hair/16-silver-twin-tails.png"
+    },
+    {
+      "id": "hair/17-dark-brown-spiral-curls",
+      "category": "hair",
+      "filename": "17-dark-brown-spiral-curls.png",
+      "relativePath": "hair/17-dark-brown-spiral-curls.png"
+    },
+    {
+      "id": "hair/18-lavender-wavy-layered-hair",
+      "category": "hair",
+      "filename": "18-lavender-wavy-layered-hair.png",
+      "relativePath": "hair/18-lavender-wavy-layered-hair.png"
+    },
+    {
+      "id": "hair/19-denim-cap-black-bob-lily-liffy",
+      "category": "hair",
+      "filename": "19-denim-cap-black-bob-lily-liffy.png",
+      "relativePath": "hair/19-denim-cap-black-bob-lily-liffy.png"
+    },
+    {
+      "id": "hair/20-pastel-pink-long-straight-hair",
+      "category": "hair",
+      "filename": "20-pastel-pink-long-straight-hair.png",
+      "relativePath": "hair/20-pastel-pink-long-straight-hair.png"
+    },
+    {
+      "id": "heads/01-pale-grey-blue-eyes-glossy-lips",
+      "category": "heads",
+      "filename": "01-pale-grey-blue-eyes-glossy-lips.png",
+      "relativePath": "heads/01-pale-grey-blue-eyes-glossy-lips.png"
+    },
+    {
+      "id": "heads/02-pale-green-eyes-berry-lips",
+      "category": "heads",
+      "filename": "02-pale-green-eyes-berry-lips.png",
+      "relativePath": "heads/02-pale-green-eyes-berry-lips.png"
+    },
+    {
+      "id": "heads/03-pale-green-eyes-red-lips",
+      "category": "heads",
+      "filename": "03-pale-green-eyes-red-lips.png",
+      "relativePath": "heads/03-pale-green-eyes-red-lips.png"
+    },
+    {
+      "id": "heads/04-grey-anime-star-eyes-blush",
+      "category": "heads",
+      "filename": "04-grey-anime-star-eyes-blush.png",
+      "relativePath": "heads/04-grey-anime-star-eyes-blush.png"
+    },
+    {
+      "id": "heads/05-grey-lashed-green-eyes-mauve-lips",
+      "category": "heads",
+      "filename": "05-grey-lashed-green-eyes-mauve-lips.png",
+      "relativePath": "heads/05-grey-lashed-green-eyes-mauve-lips.png"
+    },
+    {
+      "id": "heads/06-grey-closed-eyes-blush",
+      "category": "heads",
+      "filename": "06-grey-closed-eyes-blush.png",
+      "relativePath": "heads/06-grey-closed-eyes-blush.png"
+    },
+    {
+      "id": "heads/07-tan-freckles-brown-eyes",
+      "category": "heads",
+      "filename": "07-tan-freckles-brown-eyes.png",
+      "relativePath": "heads/07-tan-freckles-brown-eyes.png"
+    },
+    {
+      "id": "heads/08-grey-sleepy-eyes-beauty-mark",
+      "category": "heads",
+      "filename": "08-grey-sleepy-eyes-beauty-mark.png",
+      "relativePath": "heads/08-grey-sleepy-eyes-beauty-mark.png"
+    },
+    {
+      "id": "heads/09-grey-brown-eyes-glossy-pink-lips",
+      "category": "heads",
+      "filename": "09-grey-brown-eyes-glossy-pink-lips.png",
+      "relativePath": "heads/09-grey-brown-eyes-glossy-pink-lips.png"
+    },
+    {
+      "id": "heads/10-grey-long-lashes-nude-lips",
+      "category": "heads",
+      "filename": "10-grey-long-lashes-nude-lips.png",
+      "relativePath": "heads/10-grey-long-lashes-nude-lips.png"
+    },
+    {
+      "id": "heads/11-pale-blue-eyes-douyin-makeup",
+      "category": "heads",
+      "filename": "11-pale-blue-eyes-douyin-makeup.png",
+      "relativePath": "heads/11-pale-blue-eyes-douyin-makeup.png"
+    },
+    {
+      "id": "heads/12-grey-shy-crescent-eyes",
+      "category": "heads",
+      "filename": "12-grey-shy-crescent-eyes.png",
+      "relativePath": "heads/12-grey-shy-crescent-eyes.png"
+    },
+    {
+      "id": "heads/13-beige-brown-eyes-glossy-pink-lips",
+      "category": "heads",
+      "filename": "13-beige-brown-eyes-glossy-pink-lips.png",
+      "relativePath": "heads/13-beige-brown-eyes-glossy-pink-lips.png"
+    },
+    {
+      "id": "heads/14-pale-freckles-brown-eyes-nude-lips",
+      "category": "heads",
+      "filename": "14-pale-freckles-brown-eyes-nude-lips.png",
+      "relativePath": "heads/14-pale-freckles-brown-eyes-nude-lips.png"
+    },
+    {
+      "id": "heads/15-pale-grey-anime-eyes-soft-blush",
+      "category": "heads",
+      "filename": "15-pale-grey-anime-eyes-soft-blush.png",
+      "relativePath": "heads/15-pale-grey-anime-eyes-soft-blush.png"
+    },
+    {
+      "id": "heads/16-pale-anime-sparkle-eyes-blush",
+      "category": "heads",
+      "filename": "16-pale-anime-sparkle-eyes-blush.png",
+      "relativePath": "heads/16-pale-anime-sparkle-eyes-blush.png"
+    },
+    {
+      "id": "heads/17-grey-black-eyes-glam-lashes",
+      "category": "heads",
+      "filename": "17-grey-black-eyes-glam-lashes.png",
+      "relativePath": "heads/17-grey-black-eyes-glam-lashes.png"
+    },
+    {
+      "id": "heads/18-grey-star-eyes-tongue-out",
+      "category": "heads",
+      "filename": "18-grey-star-eyes-tongue-out.png",
+      "relativePath": "heads/18-grey-star-eyes-tongue-out.png"
+    },
+    {
+      "id": "heads/19-grey-kawaii-sparkle-eyes",
+      "category": "heads",
+      "filename": "19-grey-kawaii-sparkle-eyes.png",
+      "relativePath": "heads/19-grey-kawaii-sparkle-eyes.png"
+    },
+    {
+      "id": "heads/20-grey-crying-tears-face",
+      "category": "heads",
+      "filename": "20-grey-crying-tears-face.png",
+      "relativePath": "heads/20-grey-crying-tears-face.png"
+    },
+    {
+      "id": "shirts/01-red-norway-jersey-9",
+      "category": "shirts",
+      "filename": "01-red-norway-jersey-9.png",
+      "relativePath": "shirts/01-red-norway-jersey-9.png"
+    },
+    {
+      "id": "shirts/02-plaid-tie-front-over-camisole",
+      "category": "shirts",
+      "filename": "02-plaid-tie-front-over-camisole.png",
+      "relativePath": "shirts/02-plaid-tie-front-over-camisole.png"
+    },
+    {
+      "id": "shirts/03-brown-ribbed-turtleneck-necklace",
+      "category": "shirts",
+      "filename": "03-brown-ribbed-turtleneck-necklace.png",
+      "relativePath": "shirts/03-brown-ribbed-turtleneck-necklace.png"
+    },
+    {
+      "id": "shirts/04-brown-pinstripe-button-down",
+      "category": "shirts",
+      "filename": "04-brown-pinstripe-button-down.png",
+      "relativePath": "shirts/04-brown-pinstripe-button-down.png"
+    },
+    {
+      "id": "shirts/05-cream-tie-front-cropped-cardigan",
+      "category": "shirts",
+      "filename": "05-cream-tie-front-cropped-cardigan.png",
+      "relativePath": "shirts/05-cream-tie-front-cropped-cardigan.png"
+    },
+    {
+      "id": "shirts/06-brown-stripe-open-shirt-white-crop",
+      "category": "shirts",
+      "filename": "06-brown-stripe-open-shirt-white-crop.png",
+      "relativePath": "shirts/06-brown-stripe-open-shirt-white-crop.png"
+    },
+    {
+      "id": "shirts/07-red-spain-jersey-19-tied",
+      "category": "shirts",
+      "filename": "07-red-spain-jersey-19-tied.png",
+      "relativePath": "shirts/07-red-spain-jersey-19-tied.png"
+    },
+    {
+      "id": "shirts/08-white-spain-jersey-19-tied",
+      "category": "shirts",
+      "filename": "08-white-spain-jersey-19-tied.png",
+      "relativePath": "shirts/08-white-spain-jersey-19-tied.png"
+    },
+    {
+      "id": "shirts/09-grey-blazer-cream-scarf",
+      "category": "shirts",
+      "filename": "09-grey-blazer-cream-scarf.png",
+      "relativePath": "shirts/09-grey-blazer-cream-scarf.png"
+    },
+    {
+      "id": "shirts/10-blue-white-vertical-stripe-shirt",
+      "category": "shirts",
+      "filename": "10-blue-white-vertical-stripe-shirt.png",
+      "relativePath": "shirts/10-blue-white-vertical-stripe-shirt.png"
+    },
+    {
+      "id": "shirts/11-orange-teal-striped-longsleeve-polo",
+      "category": "shirts",
+      "filename": "11-orange-teal-striped-longsleeve-polo.png",
+      "relativePath": "shirts/11-orange-teal-striped-longsleeve-polo.png"
+    },
+    {
+      "id": "shirts/12-blue-yellow-horizontal-stripe-polo",
+      "category": "shirts",
+      "filename": "12-blue-yellow-horizontal-stripe-polo.png",
+      "relativePath": "shirts/12-blue-yellow-horizontal-stripe-polo.png"
+    },
+    {
+      "id": "shirts/13-maroon-bell-sleeve-bow-top",
+      "category": "shirts",
+      "filename": "13-maroon-bell-sleeve-bow-top.png",
+      "relativePath": "shirts/13-maroon-bell-sleeve-bow-top.png"
+    },
+    {
+      "id": "shirts/14-grey-striped-off-shoulder-top",
+      "category": "shirts",
+      "filename": "14-grey-striped-off-shoulder-top.png",
+      "relativePath": "shirts/14-grey-striped-off-shoulder-top.png"
+    },
+    {
+      "id": "t-shirts/01-cream-ruched-boat-neck-top",
+      "category": "t-shirts",
+      "filename": "01-cream-ruched-boat-neck-top.png",
+      "relativePath": "t-shirts/01-cream-ruched-boat-neck-top.png"
+    },
+    {
+      "id": "t-shirts/02-white-carhartt-ringer-tee",
+      "category": "t-shirts",
+      "filename": "02-white-carhartt-ringer-tee.png",
+      "relativePath": "t-shirts/02-white-carhartt-ringer-tee.png"
+    },
+    {
+      "id": "t-shirts/03-tan-cable-sweater-white-collar-tie",
+      "category": "t-shirts",
+      "filename": "03-tan-cable-sweater-white-collar-tie.png",
+      "relativePath": "t-shirts/03-tan-cable-sweater-white-collar-tie.png"
+    },
+    {
+      "id": "t-shirts/04-black-smug-cat-graphic-tee",
+      "category": "t-shirts",
+      "filename": "04-black-smug-cat-graphic-tee.png",
+      "relativePath": "t-shirts/04-black-smug-cat-graphic-tee.png"
+    },
+    {
+      "id": "t-shirts/05-brown-new-york-98-jersey",
+      "category": "t-shirts",
+      "filename": "05-brown-new-york-98-jersey.png",
+      "relativePath": "t-shirts/05-brown-new-york-98-jersey.png"
+    },
+    {
+      "id": "t-shirts/06-black-alien-cat-graphic-tee",
+      "category": "t-shirts",
+      "filename": "06-black-alien-cat-graphic-tee.png",
+      "relativePath": "t-shirts/06-black-alien-cat-graphic-tee.png"
+    },
+    {
+      "id": "t-shirts/07-cream-red-star-cropped-tee",
+      "category": "t-shirts",
+      "filename": "07-cream-red-star-cropped-tee.png",
+      "relativePath": "t-shirts/07-cream-red-star-cropped-tee.png"
+    },
+    {
+      "id": "t-shirts/08-stussy-carhartt-split-lace-up",
+      "category": "t-shirts",
+      "filename": "08-stussy-carhartt-split-lace-up.png",
+      "relativePath": "t-shirts/08-stussy-carhartt-split-lace-up.png"
+    },
+    {
+      "id": "t-shirts/09-black-mexico-flag-green-trim-tee",
+      "category": "t-shirts",
+      "filename": "09-black-mexico-flag-green-trim-tee.png",
+      "relativePath": "t-shirts/09-black-mexico-flag-green-trim-tee.png"
+    },
+    {
+      "id": "t-shirts/10-brown-tokyo-underground-car-tee",
+      "category": "t-shirts",
+      "filename": "10-brown-tokyo-underground-car-tee.png",
+      "relativePath": "t-shirts/10-brown-tokyo-underground-car-tee.png"
+    },
+    {
+      "id": "t-shirts/11-jersey-66-over-hoodie",
+      "category": "t-shirts",
+      "filename": "11-jersey-66-over-hoodie.png",
+      "relativePath": "t-shirts/11-jersey-66-over-hoodie.png"
+    },
+    {
+      "id": "t-shirts/12-yellow-spongebob-cropped-tee",
+      "category": "t-shirts",
+      "filename": "12-yellow-spongebob-cropped-tee.png",
+      "relativePath": "t-shirts/12-yellow-spongebob-cropped-tee.png"
+    },
+    {
+      "id": "t-shirts/13-black-the-1975-graphic-tee",
+      "category": "t-shirts",
+      "filename": "13-black-the-1975-graphic-tee.png",
+      "relativePath": "t-shirts/13-black-the-1975-graphic-tee.png"
+    },
+    {
+      "id": "t-shirts/14-white-sza-good-days-tee",
+      "category": "t-shirts",
+      "filename": "14-white-sza-good-days-tee.png",
+      "relativePath": "t-shirts/14-white-sza-good-days-tee.png"
+    },
+    {
+      "id": "t-shirts/15-white-tank-black-tie-safety-pins",
+      "category": "t-shirts",
+      "filename": "15-white-tank-black-tie-safety-pins.png",
+      "relativePath": "t-shirts/15-white-tank-black-tie-safety-pins.png"
+    },
+    {
+      "id": "t-shirts/16-yellow-minion-face-tee",
+      "category": "t-shirts",
+      "filename": "16-yellow-minion-face-tee.png",
+      "relativePath": "t-shirts/16-yellow-minion-face-tee.png"
+    },
+    {
+      "id": "t-shirts/17-pink-33-varsity-bow-sleeves",
+      "category": "t-shirts",
+      "filename": "17-pink-33-varsity-bow-sleeves.png",
+      "relativePath": "t-shirts/17-pink-33-varsity-bow-sleeves.png"
+    },
+    {
+      "id": "sweaters/01-blue-stripe-cropped-hoodie-cartridge-sash",
+      "category": "sweaters",
+      "filename": "01-blue-stripe-cropped-hoodie-cartridge-sash.png",
+      "relativePath": "sweaters/01-blue-stripe-cropped-hoodie-cartridge-sash.png"
+    },
+    {
+      "id": "sweaters/02-navy-grey-stripe-puff-sleeve",
+      "category": "sweaters",
+      "filename": "02-navy-grey-stripe-puff-sleeve.png",
+      "relativePath": "sweaters/02-navy-grey-stripe-puff-sleeve.png"
+    },
+    {
+      "id": "sweaters/03-pink-stripe-cropped-over-mauve-tank",
+      "category": "sweaters",
+      "filename": "03-pink-stripe-cropped-over-mauve-tank.png",
+      "relativePath": "sweaters/03-pink-stripe-cropped-over-mauve-tank.png"
+    },
+    {
+      "id": "sweaters/04-brown-cream-chunky-stripe",
+      "category": "sweaters",
+      "filename": "04-brown-cream-chunky-stripe.png",
+      "relativePath": "sweaters/04-brown-cream-chunky-stripe.png"
+    },
+    {
+      "id": "sweaters/05-black-white-stripe-boatneck-choker",
+      "category": "sweaters",
+      "filename": "05-black-white-stripe-boatneck-choker.png",
+      "relativePath": "sweaters/05-black-white-stripe-boatneck-choker.png"
+    },
+    {
+      "id": "sweaters/06-forest-camo-hoodie",
+      "category": "sweaters",
+      "filename": "06-forest-camo-hoodie.png",
+      "relativePath": "sweaters/06-forest-camo-hoodie.png"
+    },
+    {
+      "id": "sweaters/07-pink-palm-hibiscus-hoodie",
+      "category": "sweaters",
+      "filename": "07-pink-palm-hibiscus-hoodie.png",
+      "relativePath": "sweaters/07-pink-palm-hibiscus-hoodie.png"
+    },
+    {
+      "id": "sweaters/08-white-sweater-black-shoulders-tied",
+      "category": "sweaters",
+      "filename": "08-white-sweater-black-shoulders-tied.png",
+      "relativePath": "sweaters/08-white-sweater-black-shoulders-tied.png"
+    },
+    {
+      "id": "sweaters/09-grey-branch-camo-cropped-hoodie",
+      "category": "sweaters",
+      "filename": "09-grey-branch-camo-cropped-hoodie.png",
+      "relativePath": "sweaters/09-grey-branch-camo-cropped-hoodie.png"
+    },
+    {
+      "id": "sweaters/10-navy-off-shoulder-over-white-cami",
+      "category": "sweaters",
+      "filename": "10-navy-off-shoulder-over-white-cami.png",
+      "relativePath": "sweaters/10-navy-off-shoulder-over-white-cami.png"
+    },
+    {
+      "id": "sweaters/11-grey-vneck-plaid-layer",
+      "category": "sweaters",
+      "filename": "11-grey-vneck-plaid-layer.png",
+      "relativePath": "sweaters/11-grey-vneck-plaid-layer.png"
+    },
+    {
+      "id": "sweaters/12-charcoal-ribbed-crewneck",
+      "category": "sweaters",
+      "filename": "12-charcoal-ribbed-crewneck.png",
+      "relativePath": "sweaters/12-charcoal-ribbed-crewneck.png"
+    },
+    {
+      "id": "sweaters/13-dark-grey-boatneck",
+      "category": "sweaters",
+      "filename": "13-dark-grey-boatneck.png",
+      "relativePath": "sweaters/13-dark-grey-boatneck.png"
+    },
+    {
+      "id": "sweaters/14-maroon-black-stripe-white-collar",
+      "category": "sweaters",
+      "filename": "14-maroon-black-stripe-white-collar.png",
+      "relativePath": "sweaters/14-maroon-black-stripe-white-collar.png"
+    },
+    {
+      "id": "sweaters/15-blue-monster-graphic-off-shoulder",
+      "category": "sweaters",
+      "filename": "15-blue-monster-graphic-off-shoulder.png",
+      "relativePath": "sweaters/15-blue-monster-graphic-off-shoulder.png"
+    },
+    {
+      "id": "sweaters/16-red-black-beige-plaid-neck",
+      "category": "sweaters",
+      "filename": "16-red-black-beige-plaid-neck.png",
+      "relativePath": "sweaters/16-red-black-beige-plaid-neck.png"
+    },
+    {
+      "id": "sweaters/17-cream-huggy-bear-billy",
+      "category": "sweaters",
+      "filename": "17-cream-huggy-bear-billy.png",
+      "relativePath": "sweaters/17-cream-huggy-bear-billy.png"
+    },
+    {
+      "id": "sweaters/18-black-knit-banana-cat",
+      "category": "sweaters",
+      "filename": "18-black-knit-banana-cat.png",
+      "relativePath": "sweaters/18-black-knit-banana-cat.png"
+    },
+    {
+      "id": "sweaters/19-pink-vneck-with-teddy",
+      "category": "sweaters",
+      "filename": "19-pink-vneck-with-teddy.png",
+      "relativePath": "sweaters/19-pink-vneck-with-teddy.png"
+    },
+    {
+      "id": "sweaters/20-grey-hoodie-gir-dog",
+      "category": "sweaters",
+      "filename": "20-grey-hoodie-gir-dog.png",
+      "relativePath": "sweaters/20-grey-hoodie-gir-dog.png"
+    },
+    {
+      "id": "clothing/01-black-polka-dot-dress",
+      "category": "clothing",
+      "filename": "01-black-polka-dot-dress.png",
+      "relativePath": "clothing/01-black-polka-dot-dress.png"
+    },
+    {
+      "id": "clothing/02-beige-ruched-sleeveless-top",
+      "category": "clothing",
+      "filename": "02-beige-ruched-sleeveless-top.png",
+      "relativePath": "clothing/02-beige-ruched-sleeveless-top.png"
+    },
+    {
+      "id": "clothing/03-brown-grunge-skirt-fur-boots",
+      "category": "clothing",
+      "filename": "03-brown-grunge-skirt-fur-boots.png",
+      "relativePath": "clothing/03-brown-grunge-skirt-fur-boots.png"
+    },
+    {
+      "id": "clothing/04-brown-pinstripe-button-up",
+      "category": "clothing",
+      "filename": "04-brown-pinstripe-button-up.png",
+      "relativePath": "clothing/04-brown-pinstripe-button-up.png"
+    },
+    {
+      "id": "clothing/05-cream-tie-front-crop-top",
+      "category": "clothing",
+      "filename": "05-cream-tie-front-crop-top.png",
+      "relativePath": "clothing/05-cream-tie-front-crop-top.png"
+    },
+    {
+      "id": "clothing/06-beige-brown-raglan-sweatshirt",
+      "category": "clothing",
+      "filename": "06-beige-brown-raglan-sweatshirt.png",
+      "relativePath": "clothing/06-beige-brown-raglan-sweatshirt.png"
+    },
+    {
+      "id": "clothing/07-grey-boatneck-top-shoulder-bag",
+      "category": "clothing",
+      "filename": "07-grey-boatneck-top-shoulder-bag.png",
+      "relativePath": "clothing/07-grey-boatneck-top-shoulder-bag.png"
+    },
+    {
+      "id": "clothing/08-brown-pinstripe-baggy-pants",
+      "category": "clothing",
+      "filename": "08-brown-pinstripe-baggy-pants.png",
+      "relativePath": "clothing/08-brown-pinstripe-baggy-pants.png"
+    },
+    {
+      "id": "clothing/09-dark-flare-jeans-chain-belt",
+      "category": "clothing",
+      "filename": "09-dark-flare-jeans-chain-belt.png",
+      "relativePath": "clothing/09-dark-flare-jeans-chain-belt.png"
+    },
+    {
+      "id": "clothing/10-brown-slouch-boots",
+      "category": "clothing",
+      "filename": "10-brown-slouch-boots.png",
+      "relativePath": "clothing/10-brown-slouch-boots.png"
+    },
+    {
+      "id": "clothing/11-dark-wide-leg-jeans",
+      "category": "clothing",
+      "filename": "11-dark-wide-leg-jeans.png",
+      "relativePath": "clothing/11-dark-wide-leg-jeans.png"
+    },
+    {
+      "id": "clothing/12-denim-mini-skirt-leg-warmers",
+      "category": "clothing",
+      "filename": "12-denim-mini-skirt-leg-warmers.png",
+      "relativePath": "clothing/12-denim-mini-skirt-leg-warmers.png"
+    },
+    {
+      "id": "clothing/13-striped-off-shoulder-sweater",
+      "category": "clothing",
+      "filename": "13-striped-off-shoulder-sweater.png",
+      "relativePath": "clothing/13-striped-off-shoulder-sweater.png"
+    },
+    {
+      "id": "clothing/14-blue-striped-polo",
+      "category": "clothing",
+      "filename": "14-blue-striped-polo.png",
+      "relativePath": "clothing/14-blue-striped-polo.png"
+    },
+    {
+      "id": "clothing/15-brown-cottagecore-dress-set",
+      "category": "clothing",
+      "filename": "15-brown-cottagecore-dress-set.png",
+      "relativePath": "clothing/15-brown-cottagecore-dress-set.png"
+    },
+    {
+      "id": "clothing/16-silver-cropped-hoodie",
+      "category": "clothing",
+      "filename": "16-silver-cropped-hoodie.png",
+      "relativePath": "clothing/16-silver-cropped-hoodie.png"
+    },
+    {
+      "id": "clothing/17-adidas-beige-flared-skirt",
+      "category": "clothing",
+      "filename": "17-adidas-beige-flared-skirt.png",
+      "relativePath": "clothing/17-adidas-beige-flared-skirt.png"
+    },
+    {
+      "id": "clothing/18-gingham-cottagecore-dress-basket",
+      "category": "clothing",
+      "filename": "18-gingham-cottagecore-dress-basket.png",
+      "relativePath": "clothing/18-gingham-cottagecore-dress-basket.png"
+    },
+    {
+      "id": "clothing/19-grey-sweater-plaid-skirt",
+      "category": "clothing",
+      "filename": "19-grey-sweater-plaid-skirt.png",
+      "relativePath": "clothing/19-grey-sweater-plaid-skirt.png"
+    },
+    {
+      "id": "clothing/20-plaid-shirt-white-sleeves-tie",
+      "category": "clothing",
+      "filename": "20-plaid-shirt-white-sleeves-tie.png",
+      "relativePath": "clothing/20-plaid-shirt-white-sleeves-tie.png"
+    },
+    {
+      "id": "accessories/01-black-oval-glasses",
+      "category": "accessories",
+      "filename": "01-black-oval-glasses.png",
+      "relativePath": "accessories/01-black-oval-glasses.png"
+    },
+    {
+      "id": "accessories/02-brown-messenger-crossbody-bag",
+      "category": "accessories",
+      "filename": "02-brown-messenger-crossbody-bag.png",
+      "relativePath": "accessories/02-brown-messenger-crossbody-bag.png"
+    },
+    {
+      "id": "accessories/03-cream-beret-plaid-bow-strawberries",
+      "category": "accessories",
+      "filename": "03-cream-beret-plaid-bow-strawberries.png",
+      "relativePath": "accessories/03-cream-beret-plaid-bow-strawberries.png"
+    },
+    {
+      "id": "accessories/04-brown-patchwork-tote-bag",
+      "category": "accessories",
+      "filename": "04-brown-patchwork-tote-bag.png",
+      "relativePath": "accessories/04-brown-patchwork-tote-bag.png"
+    },
+    {
+      "id": "accessories/05-tan-monogram-bandana-hype",
+      "category": "accessories",
+      "filename": "05-tan-monogram-bandana-hype.png",
+      "relativePath": "accessories/05-tan-monogram-bandana-hype.png"
+    },
+    {
+      "id": "accessories/06-grey-tabby-kitten-sleeping",
+      "category": "accessories",
+      "filename": "06-grey-tabby-kitten-sleeping.png",
+      "relativePath": "accessories/06-grey-tabby-kitten-sleeping.png"
+    },
+    {
+      "id": "accessories/07-grey-tabby-kitten-sleeping-b",
+      "category": "accessories",
+      "filename": "07-grey-tabby-kitten-sleeping-b.png",
+      "relativePath": "accessories/07-grey-tabby-kitten-sleeping-b.png"
+    },
+    {
+      "id": "accessories/08-beige-y2k-beanie-charms",
+      "category": "accessories",
+      "filename": "08-beige-y2k-beanie-charms.png",
+      "relativePath": "accessories/08-beige-y2k-beanie-charms.png"
+    },
+    {
+      "id": "accessories/09-pink-buldak-ramen-cup",
+      "category": "accessories",
+      "filename": "09-pink-buldak-ramen-cup.png",
+      "relativePath": "accessories/09-pink-buldak-ramen-cup.png"
+    },
+    {
+      "id": "accessories/10-cream-padded-headphones-bows",
+      "category": "accessories",
+      "filename": "10-cream-padded-headphones-bows.png",
+      "relativePath": "accessories/10-cream-padded-headphones-bows.png"
+    },
+    {
+      "id": "accessories/11-red-paisley-bandana",
+      "category": "accessories",
+      "filename": "11-red-paisley-bandana.png",
+      "relativePath": "accessories/11-red-paisley-bandana.png"
+    },
+    {
+      "id": "accessories/12-red-anime-anger-symbols",
+      "category": "accessories",
+      "filename": "12-red-anime-anger-symbols.png",
+      "relativePath": "accessories/12-red-anime-anger-symbols.png"
+    },
+    {
+      "id": "accessories/13-white-pearl-headband",
+      "category": "accessories",
+      "filename": "13-white-pearl-headband.png",
+      "relativePath": "accessories/13-white-pearl-headband.png"
+    },
+    {
+      "id": "accessories/14-panda-knit-beanie",
+      "category": "accessories",
+      "filename": "14-panda-knit-beanie.png",
+      "relativePath": "accessories/14-panda-knit-beanie.png"
+    },
+    {
+      "id": "accessories/15-cream-plush-lamb",
+      "category": "accessories",
+      "filename": "15-cream-plush-lamb.png",
+      "relativePath": "accessories/15-cream-plush-lamb.png"
+    },
+    {
+      "id": "accessories/16-pink-hibiscus-flower",
+      "category": "accessories",
+      "filename": "16-pink-hibiscus-flower.png",
+      "relativePath": "accessories/16-pink-hibiscus-flower.png"
+    },
+    {
+      "id": "accessories/17-lime-alien-three-eye-hood",
+      "category": "accessories",
+      "filename": "17-lime-alien-three-eye-hood.png",
+      "relativePath": "accessories/17-lime-alien-three-eye-hood.png"
+    },
+    {
+      "id": "accessories/18-beige-pusheen-cat",
+      "category": "accessories",
+      "filename": "18-beige-pusheen-cat.png",
+      "relativePath": "accessories/18-beige-pusheen-cat.png"
+    },
+    {
+      "id": "accessories/19-multicolor-propeller-hat",
+      "category": "accessories",
+      "filename": "19-multicolor-propeller-hat.png",
+      "relativePath": "accessories/19-multicolor-propeller-hat.png"
+    },
+    {
+      "id": "accessories/20-gunmetal-skeletal-hands",
+      "category": "accessories",
+      "filename": "20-gunmetal-skeletal-hands.png",
+      "relativePath": "accessories/20-gunmetal-skeletal-hands.png"
+    },
+    {
+      "id": "animation/01-grey-strut-walk",
+      "category": "animation",
+      "filename": "01-grey-strut-walk.png",
+      "relativePath": "animation/01-grey-strut-walk.png"
+    },
+    {
+      "id": "animation/02-grey-hands-on-hips",
+      "category": "animation",
+      "filename": "02-grey-hands-on-hips.png",
+      "relativePath": "animation/02-grey-hands-on-hips.png"
+    },
+    {
+      "id": "animation/03-grey-crossed-leg-lean",
+      "category": "animation",
+      "filename": "03-grey-crossed-leg-lean.png",
+      "relativePath": "animation/03-grey-crossed-leg-lean.png"
+    },
+    {
+      "id": "animation/04-grey-twisted-knee-tuck",
+      "category": "animation",
+      "filename": "04-grey-twisted-knee-tuck.png",
+      "relativePath": "animation/04-grey-twisted-knee-tuck.png"
+    },
+    {
+      "id": "animation/05-grey-running-stride",
+      "category": "animation",
+      "filename": "05-grey-running-stride.png",
+      "relativePath": "animation/05-grey-running-stride.png"
+    },
+    {
+      "id": "animation/06-grey-hands-behind-back",
+      "category": "animation",
+      "filename": "06-grey-hands-behind-back.png",
+      "relativePath": "animation/06-grey-hands-behind-back.png"
+    },
+    {
+      "id": "animation/07-grey-confident-wide-stance",
+      "category": "animation",
+      "filename": "07-grey-confident-wide-stance.png",
+      "relativePath": "animation/07-grey-confident-wide-stance.png"
+    },
+    {
+      "id": "animation/08-grey-crouched-combat-ready",
+      "category": "animation",
+      "filename": "08-grey-crouched-combat-ready.png",
+      "relativePath": "animation/08-grey-crouched-combat-ready.png"
+    },
+    {
+      "id": "animation/09-grey-lean-back-hip-rest",
+      "category": "animation",
+      "filename": "09-grey-lean-back-hip-rest.png",
+      "relativePath": "animation/09-grey-lean-back-hip-rest.png"
+    },
+    {
+      "id": "animation/10-lavender-one-leg-dance",
+      "category": "animation",
+      "filename": "10-lavender-one-leg-dance.png",
+      "relativePath": "animation/10-lavender-one-leg-dance.png"
+    },
+    {
+      "id": "animation/11-grey-asymmetric-stride",
+      "category": "animation",
+      "filename": "11-grey-asymmetric-stride.png",
+      "relativePath": "animation/11-grey-asymmetric-stride.png"
+    },
+    {
+      "id": "animation/12-grey-walking-cycle",
+      "category": "animation",
+      "filename": "12-grey-walking-cycle.png",
+      "relativePath": "animation/12-grey-walking-cycle.png"
+    },
+    {
+      "id": "animation/13-lavender-step-lift",
+      "category": "animation",
+      "filename": "13-lavender-step-lift.png",
+      "relativePath": "animation/13-lavender-step-lift.png"
+    },
+    {
+      "id": "animation/14-grey-akimbo-wide-stance",
+      "category": "animation",
+      "filename": "14-grey-akimbo-wide-stance.png",
+      "relativePath": "animation/14-grey-akimbo-wide-stance.png"
+    },
+    {
+      "id": "animation/15-grey-run-arm-swing",
+      "category": "animation",
+      "filename": "15-grey-run-arm-swing.png",
+      "relativePath": "animation/15-grey-run-arm-swing.png"
+    },
+    {
+      "id": "animation/16-bluegrey-tilted-stance",
+      "category": "animation",
+      "filename": "16-bluegrey-tilted-stance.png",
+      "relativePath": "animation/16-bluegrey-tilted-stance.png"
+    },
+    {
+      "id": "animation/17-grey-arms-out-lean-back",
+      "category": "animation",
+      "filename": "17-grey-arms-out-lean-back.png",
+      "relativePath": "animation/17-grey-arms-out-lean-back.png"
+    },
+    {
+      "id": "animation/18-grey-fist-pump-emote",
+      "category": "animation",
+      "filename": "18-grey-fist-pump-emote.png",
+      "relativePath": "animation/18-grey-fist-pump-emote.png"
+    },
+    {
+      "id": "animation/19-lavender-mid-run",
+      "category": "animation",
+      "filename": "19-lavender-mid-run.png",
+      "relativePath": "animation/19-lavender-mid-run.png"
+    },
+    {
+      "id": "animation/20-lavender-hands-behind-look-up",
+      "category": "animation",
+      "filename": "20-lavender-hands-behind-look-up.png",
+      "relativePath": "animation/20-lavender-hands-behind-look-up.png"
+    },
+    {
+      "id": "backgrounds/01-pastel-studio-gradient",
+      "category": "backgrounds",
+      "filename": "01-pastel-studio-gradient.png",
+      "relativePath": "backgrounds/01-pastel-studio-gradient.png"
+    },
+    {
+      "id": "backgrounds/02-pink-clouds-broken-ring",
+      "category": "backgrounds",
+      "filename": "02-pink-clouds-broken-ring.png",
+      "relativePath": "backgrounds/02-pink-clouds-broken-ring.png"
+    },
+    {
+      "id": "backgrounds/03-moonlit-mountain-cats",
+      "category": "backgrounds",
+      "filename": "03-moonlit-mountain-cats.png",
+      "relativePath": "backgrounds/03-moonlit-mountain-cats.png"
+    },
+    {
+      "id": "backgrounds/04-cyberpunk-neon-city",
+      "category": "backgrounds",
+      "filename": "04-cyberpunk-neon-city.png",
+      "relativePath": "backgrounds/04-cyberpunk-neon-city.png"
+    },
+    {
+      "id": "backgrounds/05-haunted-amusement-park",
+      "category": "backgrounds",
+      "filename": "05-haunted-amusement-park.png",
+      "relativePath": "backgrounds/05-haunted-amusement-park.png"
+    },
+    {
+      "id": "backgrounds/06-night-waterfront-lantern",
+      "category": "backgrounds",
+      "filename": "06-night-waterfront-lantern.png",
+      "relativePath": "backgrounds/06-night-waterfront-lantern.png"
+    },
+    {
+      "id": "backgrounds/07-sunset-basketball-court",
+      "category": "backgrounds",
+      "filename": "07-sunset-basketball-court.png",
+      "relativePath": "backgrounds/07-sunset-basketball-court.png"
+    },
+    {
+      "id": "backgrounds/08-garage-workshop-city-window",
+      "category": "backgrounds",
+      "filename": "08-garage-workshop-city-window.png",
+      "relativePath": "backgrounds/08-garage-workshop-city-window.png"
+    },
+    {
+      "id": "backgrounds/09-golden-valley-giant-deer",
+      "category": "backgrounds",
+      "filename": "09-golden-valley-giant-deer.png",
+      "relativePath": "backgrounds/09-golden-valley-giant-deer.png"
+    },
+    {
+      "id": "backgrounds/10-highway-skatepark-sunset",
+      "category": "backgrounds",
+      "filename": "10-highway-skatepark-sunset.png",
+      "relativePath": "backgrounds/10-highway-skatepark-sunset.png"
+    },
+    {
+      "id": "backgrounds/11-graffiti-brick-wall-reflection",
+      "category": "backgrounds",
+      "filename": "11-graffiti-brick-wall-reflection.png",
+      "relativePath": "backgrounds/11-graffiti-brick-wall-reflection.png"
+    },
+    {
+      "id": "backgrounds/12-alien-desert-three-moons",
+      "category": "backgrounds",
+      "filename": "12-alien-desert-three-moons.png",
+      "relativePath": "backgrounds/12-alien-desert-three-moons.png"
+    },
+    {
+      "id": "backgrounds/13-flying-speaker-van-desert",
+      "category": "backgrounds",
+      "filename": "13-flying-speaker-van-desert.png",
+      "relativePath": "backgrounds/13-flying-speaker-van-desert.png"
+    },
+    {
+      "id": "eyes/01-black-dragon-eye-tattoo",
+      "category": "eyes",
+      "filename": "01-black-dragon-eye-tattoo.png",
+      "relativePath": "eyes/01-black-dragon-eye-tattoo.png"
+    },
+    {
+      "id": "eyes/02-smoky-cut-crease-silver",
+      "category": "eyes",
+      "filename": "02-smoky-cut-crease-silver.png",
+      "relativePath": "eyes/02-smoky-cut-crease-silver.png"
+    },
+    {
+      "id": "eyes/03-white-skin-winged-liner",
+      "category": "eyes",
+      "filename": "03-white-skin-winged-liner.png",
+      "relativePath": "eyes/03-white-skin-winged-liner.png"
+    },
+    {
+      "id": "eyes/04-sharp-black-winged-liner",
+      "category": "eyes",
+      "filename": "04-sharp-black-winged-liner.png",
+      "relativePath": "eyes/04-sharp-black-winged-liner.png"
+    },
+    {
+      "id": "eyes/05-tan-skin-winged-liner",
+      "category": "eyes",
+      "filename": "05-tan-skin-winged-liner.png",
+      "relativePath": "eyes/05-tan-skin-winged-liner.png"
+    },
+    {
+      "id": "eyes/06-star-freckles-under-eyes",
+      "category": "eyes",
+      "filename": "06-star-freckles-under-eyes.png",
+      "relativePath": "eyes/06-star-freckles-under-eyes.png"
+    },
+    {
+      "id": "eyes/07-soft-taupe-eyeshadow",
+      "category": "eyes",
+      "filename": "07-soft-taupe-eyeshadow.png",
+      "relativePath": "eyes/07-soft-taupe-eyeshadow.png"
+    },
+    {
+      "id": "eyes/08-soft-brown-eyeshadow",
+      "category": "eyes",
+      "filename": "08-soft-brown-eyeshadow.png",
+      "relativePath": "eyes/08-soft-brown-eyeshadow.png"
+    },
+    {
+      "id": "eyes/09-pink-white-gradient-shadow",
+      "category": "eyes",
+      "filename": "09-pink-white-gradient-shadow.png",
+      "relativePath": "eyes/09-pink-white-gradient-shadow.png"
+    },
+    {
+      "id": "eyes/10-burgundy-shadow-winged-liner",
+      "category": "eyes",
+      "filename": "10-burgundy-shadow-winged-liner.png",
+      "relativePath": "eyes/10-burgundy-shadow-winged-liner.png"
+    },
+    {
+      "id": "eyes/11-white-halo-raccoon-eyes",
+      "category": "eyes",
+      "filename": "11-white-halo-raccoon-eyes.png",
+      "relativePath": "eyes/11-white-halo-raccoon-eyes.png"
+    },
+    {
+      "id": "eyes/12-white-glow-eye-halo",
+      "category": "eyes",
+      "filename": "12-white-glow-eye-halo.png",
+      "relativePath": "eyes/12-white-glow-eye-halo.png"
+    },
+    {
+      "id": "eyes/13-tears-streaming-grey-face",
+      "category": "eyes",
+      "filename": "13-tears-streaming-grey-face.png",
+      "relativePath": "eyes/13-tears-streaming-grey-face.png"
+    },
+    {
+      "id": "eyes/14-cheek-nose-freckles",
+      "category": "eyes",
+      "filename": "14-cheek-nose-freckles.png",
+      "relativePath": "eyes/14-cheek-nose-freckles.png"
+    },
+    {
+      "id": "eyes/15-bold-double-winged-liner",
+      "category": "eyes",
+      "filename": "15-bold-double-winged-liner.png",
+      "relativePath": "eyes/15-bold-double-winged-liner.png"
+    },
+    {
+      "id": "eyes/16-red-scar-through-left-eye",
+      "category": "eyes",
+      "filename": "16-red-scar-through-left-eye.png",
+      "relativePath": "eyes/16-red-scar-through-left-eye.png"
+    },
+    {
+      "id": "eyes/17-crimson-scar-through-left-eye",
+      "category": "eyes",
+      "filename": "17-crimson-scar-through-left-eye.png",
+      "relativePath": "eyes/17-crimson-scar-through-left-eye.png"
+    },
+    {
+      "id": "lips/01-soft-pink-gradient-white-skin",
+      "category": "lips",
+      "filename": "01-soft-pink-gradient-white-skin.png",
+      "relativePath": "lips/01-soft-pink-gradient-white-skin.png"
+    },
+    {
+      "id": "lips/02-glossy-brick-red-white-skin",
+      "category": "lips",
+      "filename": "02-glossy-brick-red-white-skin.png",
+      "relativePath": "lips/02-glossy-brick-red-white-skin.png"
+    },
+    {
+      "id": "lips/03-peach-nude-gloss",
+      "category": "lips",
+      "filename": "03-peach-nude-gloss.png",
+      "relativePath": "lips/03-peach-nude-gloss.png"
+    },
+    {
+      "id": "lips/04-dusty-rose-blurred-gradient",
+      "category": "lips",
+      "filename": "04-dusty-rose-blurred-gradient.png",
+      "relativePath": "lips/04-dusty-rose-blurred-gradient.png"
+    },
+    {
+      "id": "lips/05-dusty-pink-gloss-ombre",
+      "category": "lips",
+      "filename": "05-dusty-pink-gloss-ombre.png",
+      "relativePath": "lips/05-dusty-pink-gloss-ombre.png"
+    },
+    {
+      "id": "lips/06-rose-pink-gloss",
+      "category": "lips",
+      "filename": "06-rose-pink-gloss.png",
+      "relativePath": "lips/06-rose-pink-gloss.png"
+    },
+    {
+      "id": "lips/07-light-pink-nude-gloss",
+      "category": "lips",
+      "filename": "07-light-pink-nude-gloss.png",
+      "relativePath": "lips/07-light-pink-nude-gloss.png"
+    },
+    {
+      "id": "lips/08-mauve-rose-gloss",
+      "category": "lips",
+      "filename": "08-mauve-rose-gloss.png",
+      "relativePath": "lips/08-mauve-rose-gloss.png"
+    },
+    {
+      "id": "lips/09-pale-pink-blurred-white-skin",
+      "category": "lips",
+      "filename": "09-pale-pink-blurred-white-skin.png",
+      "relativePath": "lips/09-pale-pink-blurred-white-skin.png"
+    },
+    {
+      "id": "lips/10-rosy-pink-gradient-white-skin",
+      "category": "lips",
+      "filename": "10-rosy-pink-gradient-white-skin.png",
+      "relativePath": "lips/10-rosy-pink-gradient-white-skin.png"
+    },
+    {
+      "id": "lips/11-matte-dusty-rose",
+      "category": "lips",
+      "filename": "11-matte-dusty-rose.png",
+      "relativePath": "lips/11-matte-dusty-rose.png"
+    },
+    {
+      "id": "lips/12-natural-nude-beauty-mark",
+      "category": "lips",
+      "filename": "12-natural-nude-beauty-mark.png",
+      "relativePath": "lips/12-natural-nude-beauty-mark.png"
+    },
+    {
+      "id": "lips/13-glossy-peach-pink",
+      "category": "lips",
+      "filename": "13-glossy-peach-pink.png",
+      "relativePath": "lips/13-glossy-peach-pink.png"
+    },
+    {
+      "id": "lips/14-pink-rose-gradient-tint",
+      "category": "lips",
+      "filename": "14-pink-rose-gradient-tint.png",
+      "relativePath": "lips/14-pink-rose-gradient-tint.png"
+    },
+    {
+      "id": "lips/15-rosy-pink-blurred-shimmer",
+      "category": "lips",
+      "filename": "15-rosy-pink-blurred-shimmer.png",
+      "relativePath": "lips/15-rosy-pink-blurred-shimmer.png"
+    },
+    {
+      "id": "lips/16-natural-lips-blue-hoop-marks",
+      "category": "lips",
+      "filename": "16-natural-lips-blue-hoop-marks.png",
+      "relativePath": "lips/16-natural-lips-blue-hoop-marks.png"
+    },
+    {
+      "id": "lips/17-brown-taupe-ombre-glitter-gloss",
+      "category": "lips",
+      "filename": "17-brown-taupe-ombre-glitter-gloss.png",
+      "relativePath": "lips/17-brown-taupe-ombre-glitter-gloss.png"
+    },
+    {
+      "id": "lips/18-nude-matte-septum-star-piercing",
+      "category": "lips",
+      "filename": "18-nude-matte-septum-star-piercing.png",
+      "relativePath": "lips/18-nude-matte-septum-star-piercing.png"
+    },
+    {
+      "id": "profile-photos/01-orange-hair-frog-heart-sparkles",
+      "category": "profile-photos",
+      "filename": "01-orange-hair-frog-heart-sparkles.png",
+      "relativePath": "profile-photos/01-orange-hair-frog-heart-sparkles.png"
+    },
+    {
+      "id": "profile-photos/02-brown-braids-black-jacket",
+      "category": "profile-photos",
+      "filename": "02-brown-braids-black-jacket.png",
+      "relativePath": "profile-photos/02-brown-braids-black-jacket.png"
+    },
+    {
+      "id": "profile-photos/03-tan-box-robot-yellow-eyes",
+      "category": "profile-photos",
+      "filename": "03-tan-box-robot-yellow-eyes.png",
+      "relativePath": "profile-photos/03-tan-box-robot-yellow-eyes.png"
+    },
+    {
+      "id": "profile-photos/04-red-pigtails-spiked-choker",
+      "category": "profile-photos",
+      "filename": "04-red-pigtails-spiked-choker.png",
+      "relativePath": "profile-photos/04-red-pigtails-spiked-choker.png"
+    },
+    {
+      "id": "profile-photos/05-white-seal-pup-wave",
+      "category": "profile-photos",
+      "filename": "05-white-seal-pup-wave.png",
+      "relativePath": "profile-photos/05-white-seal-pup-wave.png"
+    },
+    {
+      "id": "profile-photos/06-blonde-pink-ombre-blue-jacket",
+      "category": "profile-photos",
+      "filename": "06-blonde-pink-ombre-blue-jacket.png",
+      "relativePath": "profile-photos/06-blonde-pink-ombre-blue-jacket.png"
+    },
+    {
+      "id": "profile-photos/07-black-bangs-red-cap-glasses",
+      "category": "profile-photos",
+      "filename": "07-black-bangs-red-cap-glasses.png",
+      "relativePath": "profile-photos/07-black-bangs-red-cap-glasses.png"
+    },
+    {
+      "id": "profile-photos/08-spiky-blonde-classic-grin",
+      "category": "profile-photos",
+      "filename": "08-spiky-blonde-classic-grin.png",
+      "relativePath": "profile-photos/08-spiky-blonde-classic-grin.png"
+    },
+    {
+      "id": "profile-photos/09-blonde-jagged-brown-crown",
+      "category": "profile-photos",
+      "filename": "09-blonde-jagged-brown-crown.png",
+      "relativePath": "profile-photos/09-blonde-jagged-brown-crown.png"
+    },
+    {
+      "id": "profile-photos/10-pink-hair-headband-chibi",
+      "category": "profile-photos",
+      "filename": "10-pink-hair-headband-chibi.png",
+      "relativePath": "profile-photos/10-pink-hair-headband-chibi.png"
+    },
+    {
+      "id": "profile-photos/11-dsquared2-trucker-hat",
+      "category": "profile-photos",
+      "filename": "11-dsquared2-trucker-hat.png",
+      "relativePath": "profile-photos/11-dsquared2-trucker-hat.png"
+    },
+    {
+      "id": "avatars/01-mint-frog-hat-green-skirt",
+      "category": "avatars",
+      "filename": "01-mint-frog-hat-green-skirt.png",
+      "relativePath": "avatars/01-mint-frog-hat-green-skirt.png"
+    },
+    {
+      "id": "avatars/02-brown-hair-muffin-headphones-white-skirt",
+      "category": "avatars",
+      "filename": "02-brown-hair-muffin-headphones-white-skirt.png",
+      "relativePath": "avatars/02-brown-hair-muffin-headphones-white-skirt.png"
+    },
+    {
+      "id": "avatars/03-blonde-pigtails-argyle-vest-glasses",
+      "category": "avatars",
+      "filename": "03-blonde-pigtails-argyle-vest-glasses.png",
+      "relativePath": "avatars/03-blonde-pigtails-argyle-vest-glasses.png"
+    },
+    {
+      "id": "avatars/04-peach-hair-fluffy-white-hat-yellow-belt",
+      "category": "avatars",
+      "filename": "04-peach-hair-fluffy-white-hat-yellow-belt.png",
+      "relativePath": "avatars/04-peach-hair-fluffy-white-hat-yellow-belt.png"
+    },
+    {
+      "id": "avatars/05-orange-hair-trapper-hat-blue-striped-socks",
+      "category": "avatars",
+      "filename": "05-orange-hair-trapper-hat-blue-striped-socks.png",
+      "relativePath": "avatars/05-orange-hair-trapper-hat-blue-striped-socks.png"
+    },
+    {
+      "id": "avatars/06-red-space-buns-puffer-vest-flared-jeans",
+      "category": "avatars",
+      "filename": "06-red-space-buns-puffer-vest-flared-jeans.png",
+      "relativePath": "avatars/06-red-space-buns-puffer-vest-flared-jeans.png"
+    },
+    {
+      "id": "avatars/07-blonde-braid-black-oversized-jacket",
+      "category": "avatars",
+      "filename": "07-blonde-braid-black-oversized-jacket.png",
+      "relativePath": "avatars/07-blonde-braid-black-oversized-jacket.png"
+    },
+    {
+      "id": "avatars/08-freddy-bear-onesie",
+      "category": "avatars",
+      "filename": "08-freddy-bear-onesie.png",
+      "relativePath": "avatars/08-freddy-bear-onesie.png"
+    },
+    {
+      "id": "avatars/09-blue-fairy-wings-puffy-skirt",
+      "category": "avatars",
+      "filename": "09-blue-fairy-wings-puffy-skirt.png",
+      "relativePath": "avatars/09-blue-fairy-wings-puffy-skirt.png"
+    },
+    {
+      "id": "avatars/10-blonde-pink-highlights-earmuffs-jeans",
+      "category": "avatars",
+      "filename": "10-blonde-pink-highlights-earmuffs-jeans.png",
+      "relativePath": "avatars/10-blonde-pink-highlights-earmuffs-jeans.png"
+    },
+    {
+      "id": "avatars/11-red-hair-black-cat-hat-striped-socks",
+      "category": "avatars",
+      "filename": "11-red-hair-black-cat-hat-striped-socks.png",
+      "relativePath": "avatars/11-red-hair-black-cat-hat-striped-socks.png"
+    },
+    {
+      "id": "avatars/12-black-pigtails-pink-camisole-coquette",
+      "category": "avatars",
+      "filename": "12-black-pigtails-pink-camisole-coquette.png",
+      "relativePath": "avatars/12-black-pigtails-pink-camisole-coquette.png"
+    },
+    {
+      "id": "avatars/13-orange-pigtails-elf-christmas",
+      "category": "avatars",
+      "filename": "13-orange-pigtails-elf-christmas.png",
+      "relativePath": "avatars/13-orange-pigtails-elf-christmas.png"
+    },
+    {
+      "id": "avatars/14-pink-braids-rainbow-sleeves-bunny-bag",
+      "category": "avatars",
+      "filename": "14-pink-braids-rainbow-sleeves-bunny-bag.png",
+      "relativePath": "avatars/14-pink-braids-rainbow-sleeves-bunny-bag.png"
+    },
+    {
+      "id": "avatars/15-white-pigtails-lily-crown-black-dress",
+      "category": "avatars",
+      "filename": "15-white-pigtails-lily-crown-black-dress.png",
+      "relativePath": "avatars/15-white-pigtails-lily-crown-black-dress.png"
+    },
+    {
+      "id": "avatars/16-white-hair-floral-crown-butterfly-skirt",
+      "category": "avatars",
+      "filename": "16-white-hair-floral-crown-butterfly-skirt.png",
+      "relativePath": "avatars/16-white-hair-floral-crown-butterfly-skirt.png"
+    },
+    {
+      "id": "avatars/17-blonde-twin-tails-animal-beanie-bunny",
+      "category": "avatars",
+      "filename": "17-blonde-twin-tails-animal-beanie-bunny.png",
+      "relativePath": "avatars/17-blonde-twin-tails-animal-beanie-bunny.png"
+    },
+    {
+      "id": "avatars/18-orange-hair-goggles-gothic-plaid-skirt",
+      "category": "avatars",
+      "filename": "18-orange-hair-goggles-gothic-plaid-skirt.png",
+      "relativePath": "avatars/18-orange-hair-goggles-gothic-plaid-skirt.png"
+    },
+    {
+      "id": "avatars/19-cyan-hair-lamb-earmuffs-asym-pants",
+      "category": "avatars",
+      "filename": "19-cyan-hair-lamb-earmuffs-asym-pants.png",
+      "relativePath": "avatars/19-cyan-hair-lamb-earmuffs-asym-pants.png"
+    },
+    {
+      "id": "avatars/20-black-hair-plaid-bandana-overalls",
+      "category": "avatars",
+      "filename": "20-black-hair-plaid-bandana-overalls.png",
+      "relativePath": "avatars/20-black-hair-plaid-bandana-overalls.png"
+    },
+    {
+      "id": "avatars/21-blue-hair-blonde-streak-overalls",
+      "category": "avatars",
+      "filename": "21-blue-hair-blonde-streak-overalls.png",
+      "relativePath": "avatars/21-blue-hair-blonde-streak-overalls.png"
+    },
+    {
+      "id": "avatars/22-curly-bun-glasses-denim-skirt",
+      "category": "avatars",
+      "filename": "22-curly-bun-glasses-denim-skirt.png",
+      "relativePath": "avatars/22-curly-bun-glasses-denim-skirt.png"
+    },
+    {
+      "id": "avatars/23-black-hair-pink-bucket-hat-tattoo-sleeves",
+      "category": "avatars",
+      "filename": "23-black-hair-pink-bucket-hat-tattoo-sleeves.png",
+      "relativePath": "avatars/23-black-hair-pink-bucket-hat-tattoo-sleeves.png"
+    },
+    {
+      "id": "avatars/24-blonde-white-cap-cargo-pants",
+      "category": "avatars",
+      "filename": "24-blonde-white-cap-cargo-pants.png",
+      "relativePath": "avatars/24-blonde-white-cap-cargo-pants.png"
+    },
+    {
+      "id": "avatars/25-brown-blonde-hair-teal-fairy-wings",
+      "category": "avatars",
+      "filename": "25-brown-blonde-hair-teal-fairy-wings.png",
+      "relativePath": "avatars/25-brown-blonde-hair-teal-fairy-wings.png"
+    },
+    {
+      "id": "avatars/26-brown-curl-candy-sweater-red-boots",
+      "category": "avatars",
+      "filename": "26-brown-curl-candy-sweater-red-boots.png",
+      "relativePath": "avatars/26-brown-curl-candy-sweater-red-boots.png"
+    },
+    {
+      "id": "avatars/27-red-hair-blue-bow-patched-dress",
+      "category": "avatars",
+      "filename": "27-red-hair-blue-bow-patched-dress.png",
+      "relativePath": "avatars/27-red-hair-blue-bow-patched-dress.png"
+    },
+    {
+      "id": "avatars/28-white-black-hair-oversized-sweater-boots",
+      "category": "avatars",
+      "filename": "28-white-black-hair-oversized-sweater-boots.png",
+      "relativePath": "avatars/28-white-black-hair-oversized-sweater-boots.png"
+    }
+  ]
+}
