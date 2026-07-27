@@ -2,7 +2,7 @@
 name: thumbnail-loader
 description: >-
   Thumbnail loader — fills placeholder thumbnails from the bundled
-  item-thumbnail-library (repo root next to this skill) into projects and
+  item-thumbnail-library (`assets/` next to this skill) into projects and
   mocks. Uses product category hierarchy (Bodies, Clothing, Accessories,
   Backgrounds, Animations, Makeup) and RFY pages that mix child subcategory
   thumbs. Clothing→Shirts uses `shirts/`; Clothing→T-shirts uses `t-shirts/`;
@@ -27,13 +27,15 @@ Fill **placeholder** thumbnail images in the current project using the bundled a
 
 ## Library (canonical)
 
-Resolve the library root in this order (first match wins):
+Resolve the **library root** (folder that contains `manifest.json` + category dirs) in this order (first match wins):
 
-1. **Repo root of this skill** — parent of `skills/` when this file lives at `skills/thumbnail-loader/SKILL.md` (clone of `item-thumbnail-library`)
-2. **`ITEM_THUMBNAIL_LIBRARY`** env var, if set
-3. Fallback: `~/Documents/item-thumbnail-library/`
+1. **`assets/` next to this skill’s repo** — when this file lives at `skills/thumbnail-loader/SKILL.md`, use `<repo>/assets/` if it contains `manifest.json`
+2. **`ITEM_THUMBNAIL_LIBRARY`** env var, if set:
+   - If that path has `manifest.json`, use it
+   - Else if `<path>/assets/manifest.json` exists, use `<path>/assets/`
+3. Fallback: `~/Documents/item-thumbnail-library/assets/`, then `~/Documents/item-thumbnail-library/`
 
-The library root contains `manifest.json` and category folders (`shirts/`, `sweaters/`, `avatars/`, …).
+The library root contains `manifest.json` and category folders (`shirts/`, `sweaters/`, `avatars/`, …). Manifest `relativePath` values are relative to this root (e.g. `sweaters/01-….png`).
 
 Read `manifest.json` for ids, categories, and `relativePath`.
 

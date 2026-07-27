@@ -16,18 +16,35 @@ Clone anywhere else if you prefer; keep the skill symlink pointed at that clone�
 
 ```bash
 export ITEM_THUMBNAIL_LIBRARY=/path/to/item-thumbnail-library
+# or point directly at the assets folder:
+# export ITEM_THUMBNAIL_LIBRARY=/path/to/item-thumbnail-library/assets
 ```
 
 Restart Cursor (or reload the window) so the skill appears.
 
-## What’s included
+## Repo layout
+
+```
+item-thumbnail-library/
+├── README.md
+├── assets/                 ← all PNGs + manifest (library root)
+│   ├── manifest.json
+│   ├── shirts/
+│   ├── sweaters/
+│   ├── avatars/
+│   └── …
+├── skills/
+│   └── thumbnail-loader/
+│       └── SKILL.md
+└── references/
+    └── marketplace-home.png
+```
 
 | Path | Purpose |
 |------|---------|
-| Category folders (`shirts/`, `sweaters/`, …) | All catalog PNG thumbnails |
-| `manifest.json` | Asset index (`id`, `category`, `relativePath`) |
+| `assets/` | Catalog PNGs by category + `manifest.json` |
 | `skills/thumbnail-loader/SKILL.md` | Cursor **Thumbnail loader** skill |
-| `references/marketplace-home.png` | Visual target for marketplace home rows (RFY / styles / items) |
+| `references/marketplace-home.png` | Visual target for marketplace home rows |
 
 ## Marketplace home reference
 
@@ -41,7 +58,7 @@ Restart Cursor (or reload the window) so the skill appears.
 
 ## Product hierarchy (for RFY / browse)
 
-Major categories each have an RFY page that **mixes** child subcategory thumbnails:
+Paths below are relative to **`assets/`**. Major categories each have an RFY page that **mixes** child subcategory thumbnails:
 
 - **Bodies** — Full bodies, Hair, Heads → `fullbodies/`, `hair/`, `heads/`
 - **Clothing** — Shirts, T-shirts, Sweaters, Jackets, Pants, Dresses & Skirts, Bodysuits, Shorts, Shoes
@@ -59,7 +76,7 @@ Major categories each have an RFY page that **mixes** child subcategory thumbnai
 
 Also: `profile-photos/` (headshots), `avatars/` (2:3 full-body character tiles).
 
-## Folders
+## Folders (under `assets/`)
 
 | Folder | Use | Count |
 |--------|-----|-------|
@@ -96,9 +113,9 @@ Prefer **~420×420** PNGs for 1:1 catalog items. Avatar assets are full-body and
 ## Use assets without the skill
 
 ```bash
-LIB=~/Documents/item-thumbnail-library   # or your clone path
+LIB=~/Documents/item-thumbnail-library/assets   # or your clone’s assets/
 cp "$LIB/clothing/01-black-polka-dot-dress.png" /path/to/project/public/design/items/1.png
-# or symlink the whole library:
+# or symlink the assets folder:
 ln -s "$LIB" /path/to/project/public/thumbnails
 ```
 
