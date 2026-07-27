@@ -101,7 +101,8 @@ Do **not** fill an RFY grid with only one subcategory when the page is the major
 | Clothing → Sweaters | `sweaters/` | Sweaters / hoodies |
 | Clothing → other subtypes | `clothing/` | Legacy mixed clothing until split into subtype folders |
 | Accessories → * (all slots) | `accessories/` | Head/Face/Neck/…/Gear |
-| Animations → Bundles, Emotes | `animation/` | Grey rig poses (product placement; not bleed) |
+| Animations → Bundles | `bundles/` | Animation packs / posed grey-rig sets (product placement; not bleed) |
+| Animations → Emotes | `emotes/` | Single emote poses (product placement; not bleed) |
 | Backgrounds | `backgrounds/` | Avatar-preview environments (bleed media) |
 | Makeup → Eyes | `eyes/` | Eye cosmetics (bleed media) |
 | Makeup → Lips | `lips/` | Lip cosmetics (bleed media) |
@@ -116,8 +117,9 @@ When filling T-shirts page: use `t-shirts/` only.
 When filling Sweaters page: use `sweaters/` only.  
 When filling Bodies RFY: mix Full bodies + Hair + Heads (`fullbodies/` + `hair/` + `heads/`).  
 When filling Accessories RFY: mix across `accessories/`.  
-When filling Animations RFY / Emotes: use `animation/` (product placement — contain + inset, not bleed).  
-When Bundles assets exist in the same folder, mix them with Emotes for Animations RFY.  
+When filling Animations RFY: mix `bundles/` + `emotes/` (product placement — contain + inset, not bleed).  
+When filling Bundles page: use `bundles/` only.  
+When filling Emotes page: use `emotes/` only.  
 When filling Backgrounds RFY / page: use `backgrounds/` (bleed + preview sync).  
 When filling Makeup RFY: mix Makeup subtype folders (`eyes/`, `lips/`, and future faces/eyelashes/eyebrows) — bleed.  
 When filling Eyes page: use `eyes/` only.  
@@ -268,9 +270,9 @@ Use context around the slot (check **tile ratio first**, then hierarchy):
 - **Tile ratio:** 2:3 taller → `avatars/`; **16:9** (or game/experience card) → `game-thumbnails/`; 1:1 → catalog / profile-photos (or game thumbs **only if user asked for 1:1**)
 - **Page type:** major RFY → mix child subcategories; subcategory page → that subtype only
 - Section/label copy (“Clothing”, “Recommended for you”, “Jackets”, “Emotes”, “Hair”, “Backgrounds”, “Games”)
-- Filename / folder / route (`sweaters`, `t-shirts`, `shirts`, `lips`, `eyes`, `makeup`, `backgrounds`, `game-thumbnails`, `games`, `experiences`, `clothing`, `fullbodies`, `hair`, `heads`, `accessories`, `animation`, `rfy`)
+- Filename / folder / route (`sweaters`, `t-shirts`, `shirts`, `lips`, `eyes`, `makeup`, `backgrounds`, `game-thumbnails`, `games`, `experiences`, `clothing`, `fullbodies`, `hair`, `heads`, `accessories`, `bundles`, `emotes`, `rfy`)
 - Component name (`ItemCard`, `ProfilePhoto`, `AvatarPreview`, `EmoteRow`, `RfyGrid`, `BackgroundTile`, `MakeupTile`, `GameCard`)
-- Crop style: full garment → clothing subtypes; face-only catalog head → heads; profile headshot → profile-photos; full dressed character → avatars; grey posed rig → animation; avatar-preview environment → backgrounds; experience/game card → game-thumbnails; close-up eye/lip cosmetics → eyes/lips
+- Crop style: full garment → clothing subtypes; face-only catalog head → heads; profile headshot → profile-photos; full dressed character → avatars; grey posed rig → bundles/emotes; avatar-preview environment → backgrounds; experience/game card → game-thumbnails; close-up eye/lip cosmetics → eyes/lips
 - Do not mix `profile-photos/` with `avatars/`, or `backgrounds/` with `game-thumbnails/`
 - Background tile select → sync preview backdrop (bleed hard rule)
 

@@ -75,7 +75,9 @@ Paths below are relative to **`assets/`**. Major categories each have an RFY pag
   - Other / legacy mixed → `clothing/` (until more subtype folders exist)
 - **Accessories** — Head, Face, Neck, Shoulder, Front, Back, Waist, Gear → `accessories/`
 - **Backgrounds** → `backgrounds/` — selecting a tile updates the avatar preview panel background
-- **Animations** — Bundles, Emotes → `animation/`
+- **Animations** — Bundles, Emotes
+  - Bundles → `bundles/`
+  - Emotes → `emotes/`
 - **Makeup** — Eyes, Lips, Faces, Eyelashes, Eyebrows
   - Eyes → `eyes/`
   - Lips → `lips/`
@@ -100,7 +102,8 @@ Also: `profile-photos/` (headshots), `avatars/` (2:3 full-body character tiles),
 | `profile-photos/` | Profile photos / headshots | 11 |
 | `avatars/` | Full-body avatar characters (**2:3** taller tiles) | 28 |
 | `accessories/` | Hats, bags, jewelry, pets, props | 20 |
-| `animation/` | Emotes, animation packs | 20 |
+| `bundles/` | Animation bundles (Animations subcategory) | 20 |
+| `emotes/` | Emotes (Animations subcategory) | 20 |
 | `game-thumbnails/` | Game / experience cards (**16:9** default; **1:1** on request) | 11 |
 
 ## Tile ratios

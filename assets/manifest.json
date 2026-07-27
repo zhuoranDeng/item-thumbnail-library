@@ -92,11 +92,6 @@
       "count": 20,
       "label": "Hats, bags, jewelry, pets, props"
     },
-    "animation": {
-      "path": "animation",
-      "count": 20,
-      "label": "Emotes / animation poses (grey rig, 1:1 product placement)"
-    },
     "backgrounds": {
       "path": "backgrounds",
       "count": 13,
@@ -128,6 +123,16 @@
       "label": "Game / experience thumbnails (default 16:9; 1:1 when requested)",
       "defaultAspectRatio": "16:9",
       "optionalAspectRatio": "1:1"
+    },
+    "bundles": {
+      "path": "bundles",
+      "count": 20,
+      "label": "Animation bundles (Animations subcategory; product placement)"
+    },
+    "emotes": {
+      "path": "emotes",
+      "count": 20,
+      "label": "Emotes (Animations subcategory; product placement)"
     }
   },
   "assets": [
@@ -1619,144 +1624,285 @@
       "aspectRatio": "16:9"
     },
     {
-      "id": "animation/01-grey-mid-motion-lean",
-      "category": "animation",
+      "id": "bundles/01-grey-strut-walk",
+      "category": "bundles",
+      "filename": "01-grey-strut-walk.png",
+      "relativePath": "bundles/01-grey-strut-walk.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/02-grey-hands-on-hips",
+      "category": "bundles",
+      "filename": "02-grey-hands-on-hips.png",
+      "relativePath": "bundles/02-grey-hands-on-hips.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/03-grey-crossed-leg-lean",
+      "category": "bundles",
+      "filename": "03-grey-crossed-leg-lean.png",
+      "relativePath": "bundles/03-grey-crossed-leg-lean.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/04-grey-twisted-knee-tuck",
+      "category": "bundles",
+      "filename": "04-grey-twisted-knee-tuck.png",
+      "relativePath": "bundles/04-grey-twisted-knee-tuck.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/05-grey-running-stride",
+      "category": "bundles",
+      "filename": "05-grey-running-stride.png",
+      "relativePath": "bundles/05-grey-running-stride.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/06-grey-hands-behind-back",
+      "category": "bundles",
+      "filename": "06-grey-hands-behind-back.png",
+      "relativePath": "bundles/06-grey-hands-behind-back.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/07-grey-confident-wide-stance",
+      "category": "bundles",
+      "filename": "07-grey-confident-wide-stance.png",
+      "relativePath": "bundles/07-grey-confident-wide-stance.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/08-grey-crouched-combat-ready",
+      "category": "bundles",
+      "filename": "08-grey-crouched-combat-ready.png",
+      "relativePath": "bundles/08-grey-crouched-combat-ready.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/09-grey-lean-back-hip-rest",
+      "category": "bundles",
+      "filename": "09-grey-lean-back-hip-rest.png",
+      "relativePath": "bundles/09-grey-lean-back-hip-rest.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/10-lavender-one-leg-dance",
+      "category": "bundles",
+      "filename": "10-lavender-one-leg-dance.png",
+      "relativePath": "bundles/10-lavender-one-leg-dance.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/11-grey-asymmetric-stride",
+      "category": "bundles",
+      "filename": "11-grey-asymmetric-stride.png",
+      "relativePath": "bundles/11-grey-asymmetric-stride.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/12-grey-walking-cycle",
+      "category": "bundles",
+      "filename": "12-grey-walking-cycle.png",
+      "relativePath": "bundles/12-grey-walking-cycle.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/13-lavender-step-lift",
+      "category": "bundles",
+      "filename": "13-lavender-step-lift.png",
+      "relativePath": "bundles/13-lavender-step-lift.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/14-grey-akimbo-wide-stance",
+      "category": "bundles",
+      "filename": "14-grey-akimbo-wide-stance.png",
+      "relativePath": "bundles/14-grey-akimbo-wide-stance.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/15-grey-run-arm-swing",
+      "category": "bundles",
+      "filename": "15-grey-run-arm-swing.png",
+      "relativePath": "bundles/15-grey-run-arm-swing.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/16-bluegrey-tilted-stance",
+      "category": "bundles",
+      "filename": "16-bluegrey-tilted-stance.png",
+      "relativePath": "bundles/16-bluegrey-tilted-stance.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/17-grey-arms-out-lean-back",
+      "category": "bundles",
+      "filename": "17-grey-arms-out-lean-back.png",
+      "relativePath": "bundles/17-grey-arms-out-lean-back.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/18-grey-fist-pump-emote",
+      "category": "bundles",
+      "filename": "18-grey-fist-pump-emote.png",
+      "relativePath": "bundles/18-grey-fist-pump-emote.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/19-lavender-mid-run",
+      "category": "bundles",
+      "filename": "19-lavender-mid-run.png",
+      "relativePath": "bundles/19-lavender-mid-run.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "bundles/20-lavender-hands-behind-look-up",
+      "category": "bundles",
+      "filename": "20-lavender-hands-behind-look-up.png",
+      "relativePath": "bundles/20-lavender-hands-behind-look-up.png",
+      "subcategory": "Bundles"
+    },
+    {
+      "id": "emotes/01-grey-mid-motion-lean",
+      "category": "emotes",
       "filename": "01-grey-mid-motion-lean.png",
-      "relativePath": "animation/01-grey-mid-motion-lean.png",
+      "relativePath": "emotes/01-grey-mid-motion-lean.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/02-grey-dance-kick",
-      "category": "animation",
+      "id": "emotes/02-grey-dance-kick",
+      "category": "emotes",
       "filename": "02-grey-dance-kick.png",
-      "relativePath": "animation/02-grey-dance-kick.png",
+      "relativePath": "emotes/02-grey-dance-kick.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/03-grey-walk-stride",
-      "category": "animation",
+      "id": "emotes/03-grey-walk-stride",
+      "category": "emotes",
       "filename": "03-grey-walk-stride.png",
-      "relativePath": "animation/03-grey-walk-stride.png",
+      "relativePath": "emotes/03-grey-walk-stride.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/04-grey-standing-neutral",
-      "category": "animation",
+      "id": "emotes/04-grey-standing-neutral",
+      "category": "emotes",
       "filename": "04-grey-standing-neutral.png",
-      "relativePath": "animation/04-grey-standing-neutral.png",
+      "relativePath": "emotes/04-grey-standing-neutral.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/05-grey-dance-kick-alt",
-      "category": "animation",
+      "id": "emotes/05-grey-dance-kick-alt",
+      "category": "emotes",
       "filename": "05-grey-dance-kick-alt.png",
-      "relativePath": "animation/05-grey-dance-kick-alt.png",
+      "relativePath": "emotes/05-grey-dance-kick-alt.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/06-grey-arms-up-wide-stance",
-      "category": "animation",
+      "id": "emotes/06-grey-arms-up-wide-stance",
+      "category": "emotes",
       "filename": "06-grey-arms-up-wide-stance.png",
-      "relativePath": "animation/06-grey-arms-up-wide-stance.png",
+      "relativePath": "emotes/06-grey-arms-up-wide-stance.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/07-grey-hands-behind-back-lean",
-      "category": "animation",
+      "id": "emotes/07-grey-hands-behind-back-lean",
+      "category": "emotes",
       "filename": "07-grey-hands-behind-back-lean.png",
-      "relativePath": "animation/07-grey-hands-behind-back-lean.png",
+      "relativePath": "emotes/07-grey-hands-behind-back-lean.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/08-grey-hands-behind-standing",
-      "category": "animation",
+      "id": "emotes/08-grey-hands-behind-standing",
+      "category": "emotes",
       "filename": "08-grey-hands-behind-standing.png",
-      "relativePath": "animation/08-grey-hands-behind-standing.png",
+      "relativePath": "emotes/08-grey-hands-behind-standing.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/09-grey-jaunty-kick-back",
-      "category": "animation",
+      "id": "emotes/09-grey-jaunty-kick-back",
+      "category": "emotes",
       "filename": "09-grey-jaunty-kick-back.png",
-      "relativePath": "animation/09-grey-jaunty-kick-back.png",
+      "relativePath": "emotes/09-grey-jaunty-kick-back.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/10-grey-step-arm-out",
-      "category": "animation",
+      "id": "emotes/10-grey-step-arm-out",
+      "category": "emotes",
       "filename": "10-grey-step-arm-out.png",
-      "relativePath": "animation/10-grey-step-arm-out.png",
+      "relativePath": "emotes/10-grey-step-arm-out.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/11-grey-arms-raised-celebrate",
-      "category": "animation",
+      "id": "emotes/11-grey-arms-raised-celebrate",
+      "category": "emotes",
       "filename": "11-grey-arms-raised-celebrate.png",
-      "relativePath": "animation/11-grey-arms-raised-celebrate.png",
+      "relativePath": "emotes/11-grey-arms-raised-celebrate.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/12-grey-wave-arm",
-      "category": "animation",
+      "id": "emotes/12-grey-wave-arm",
+      "category": "emotes",
       "filename": "12-grey-wave-arm.png",
-      "relativePath": "animation/12-grey-wave-arm.png",
+      "relativePath": "emotes/12-grey-wave-arm.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/13-grey-cross-leg-dance",
-      "category": "animation",
+      "id": "emotes/13-grey-cross-leg-dance",
+      "category": "emotes",
       "filename": "13-grey-cross-leg-dance.png",
-      "relativePath": "animation/13-grey-cross-leg-dance.png",
+      "relativePath": "emotes/13-grey-cross-leg-dance.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/14-grey-situp-crunch",
-      "category": "animation",
+      "id": "emotes/14-grey-situp-crunch",
+      "category": "emotes",
       "filename": "14-grey-situp-crunch.png",
-      "relativePath": "animation/14-grey-situp-crunch.png",
+      "relativePath": "emotes/14-grey-situp-crunch.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/15-grey-hand-on-hip",
-      "category": "animation",
+      "id": "emotes/15-grey-hand-on-hip",
+      "category": "emotes",
       "filename": "15-grey-hand-on-hip.png",
-      "relativePath": "animation/15-grey-hand-on-hip.png",
+      "relativePath": "emotes/15-grey-hand-on-hip.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/16-grey-standing-relaxed",
-      "category": "animation",
+      "id": "emotes/16-grey-standing-relaxed",
+      "category": "emotes",
       "filename": "16-grey-standing-relaxed.png",
-      "relativePath": "animation/16-grey-standing-relaxed.png",
+      "relativePath": "emotes/16-grey-standing-relaxed.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/17-grey-fist-pump-emote",
-      "category": "animation",
+      "id": "emotes/17-grey-fist-pump-emote",
+      "category": "emotes",
       "filename": "17-grey-fist-pump-emote.png",
-      "relativePath": "animation/17-grey-fist-pump-emote.png",
+      "relativePath": "emotes/17-grey-fist-pump-emote.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/18-grey-lean-back-hip",
-      "category": "animation",
+      "id": "emotes/18-grey-lean-back-hip",
+      "category": "emotes",
       "filename": "18-grey-lean-back-hip.png",
-      "relativePath": "animation/18-grey-lean-back-hip.png",
+      "relativePath": "emotes/18-grey-lean-back-hip.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/19-grey-running-stride",
-      "category": "animation",
+      "id": "emotes/19-grey-running-stride",
+      "category": "emotes",
       "filename": "19-grey-running-stride.png",
-      "relativePath": "animation/19-grey-running-stride.png",
+      "relativePath": "emotes/19-grey-running-stride.png",
       "subcategory": "Emotes"
     },
     {
-      "id": "animation/20-grey-akimbo-stance",
-      "category": "animation",
+      "id": "emotes/20-grey-akimbo-stance",
+      "category": "emotes",
       "filename": "20-grey-akimbo-stance.png",
-      "relativePath": "animation/20-grey-akimbo-stance.png",
+      "relativePath": "emotes/20-grey-akimbo-stance.png",
       "subcategory": "Emotes"
     }
-  ]
+  ],
+  "total": 286
 }
