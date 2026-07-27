@@ -345,16 +345,7 @@ Do **not** ask for confirmation on clear category matches. Do **not** dump the f
 - Use `avatars/` for headshot/profile slots — those belong in `profile-photos/`
 - Put avatars in 1:1 tiles, or non-avatar assets in 2:3 taller tiles, unless the user overrides
 - Fill **game-thumbnail** slots from `backgrounds/` (or any other folder)
-- Serve game thumbnails as **1:1** unless the user asked for square / 1:1
-- Apply **product** placement (90% shrink / contain / inset) to **bleed** categories, or bleed cover to product/avatar thumbs
-- Leave letterbox / padded bands on bleed tiles or on the avatar preview backdrop
-- Drop raw library thumbs into a product grid without the calibrated product/avatar normalize
-- Normalize from an already-shrunk project PNG (upsample) instead of the library original
-- Stack aggressive shrink (e.g. ≤80% content) with large CSS inset (≥12px) on product thumbs
-- Bake opaque black plates into **product** 1:1 PNGs — use transparent PNGs over Foundation Shift.200
-- Fill a major RFY grid with only one subcategory when a mix is possible
-- Pattern-interleave mixed RFY grids (round-robin subtypes) — shuffle instead
-- Place duplicate or near-identical thumbnails adjacent (or closer than ~a full row) when another unique visual can separate them
-- Inflate mixed RFY grids by repeating the same asset set once per subcategory slot
-- Leave the avatar preview panel on a mismatched backdrop after a background tile is selected
-- Leave inner padding / letterbox on backgrounds or makeup thumbs (bleed must be edge-to-edge)
+- Serve game thumbnails as **1:1** by default — default is **16:9**; use 1:1 only when the user asks
+- Apply **product** placement (90% shrink / contain / inset / `p-*`) to backgrounds, makeup, or game thumbnails
+- Leave letterbox / inner padding on bleed tiles (backgrounds, makeup, game thumbs) or on the avatar preview backdrop — these must **always** fill edge-to-edge
+- Apply bleed cover rules to product/avatar thumbs
