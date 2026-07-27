@@ -120,6 +120,11 @@
       "path": "avatars",
       "count": 28,
       "label": "Full-body avatar characters (2:3 tiles)"
+    },
+    "game-thumbnails": {
+      "path": "game-thumbnails",
+      "count": 0,
+      "label": "Game / experience thumbnails (empty \u2014 not uploaded yet)"
     }
   },
   "assets": [

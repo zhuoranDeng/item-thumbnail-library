@@ -118,12 +118,13 @@ When the user says “match the reference”, “marketplace home”, or attache
 | Clothing → other subtypes | `clothing/` | Legacy mixed clothing until split into subtype folders |
 | Accessories → * (all slots) | `accessories/` | Head/Face/Neck/…/Gear |
 | Animations → Bundles, Emotes | `animation/` | Grey rig poses |
-| Backgrounds | `backgrounds/` | Scene backdrops for avatar preview |
+| Backgrounds | `backgrounds/` | Scene backdrops for avatar preview — **not** game thumbnails |
 | Makeup → Eyes | `eyes/` | Eye makeup / eye-area cosmetics |
 | Makeup → Lips | `lips/` | Lip makeup / lip cosmetics |
 | Makeup → other subtypes | — | Faces, Eyelashes, Eyebrows — no folders yet |
 | (UI) Profile headshots | `profile-photos/` | Not a catalog major above |
 | (UI) Full-body avatar tiles | `avatars/` | **2:3** only; not a catalog RFY item type |
+| (UI) Game / experience cards | `game-thumbnails/` | **Empty** — do not substitute `backgrounds/` |
 
 When filling Clothing RFY: mix across Clothing subtype folders (`shirts/`, `t-shirts/`, `sweaters/`, `clothing/`, and future subtype folders).  
 When filling Shirts page: use `shirts/` only.  
@@ -244,7 +245,7 @@ Use context around the slot (check **tile ratio first**, then hierarchy):
 - Section/label copy (“Clothing”, “Recommended for you”, “Jackets”, “Emotes”, “Hair”)
 - Filename / folder / route (`sweaters`, `t-shirts`, `tshirts`, `shirts`, `lips`, `eyes`, `makeup`, `backgrounds`, `clothing`, `fullbodies`, `bodies`, `hair`, `heads`, `accessories`, `animation`, `rfy`)
 - Component name (`ItemCard`, `ProfilePhoto`, `AvatarPreview`, `EmoteRow`, `RfyGrid`, `BackgroundTile`, `MakeupTile`)
-- Crop style: full garment → clothing/shirts/t-shirts/sweaters; face-only catalog head → heads; profile headshot → profile-photos; full dressed character → avatars; grey posed rig → animation; scenic environment → backgrounds; close-up eye cosmetics → eyes; close-up mouth cosmetics → lips
+- Crop style: full garment → clothing/shirts/t-shirts/sweaters; face-only catalog head → heads; profile headshot → profile-photos; full dressed character → avatars; grey posed rig → animation; scenic avatar-preview backdrop → backgrounds; experience/game card art → game-thumbnails (empty until uploaded); close-up eye cosmetics → eyes; close-up mouth cosmetics → lips
 - Do not mix `profile-photos/` (headshots) with `avatars/` (full-body characters)
 - For Backgrounds UI: selecting a tile **must** sync the avatar preview panel background (see hard rule above)
 
@@ -304,7 +305,8 @@ Ask **only** when:
 - Category cannot be inferred
 - Multiple majors could fit the same slot
 - Overwriting would replace a non-placeholder (looks like real unique art) — confirm first
-- Library folder is empty or missing (e.g. Makeup → Faces / Eyelashes / Eyebrows)
+- Library folder is empty or missing (e.g. Makeup → Faces / Eyelashes / Eyebrows, or Game thumbnails → `game-thumbnails/`)
+- Do **not** fill game-thumbnail slots from `backgrounds/` — those are different asset types
 
 Do **not** ask for confirmation on clear category matches. Do **not** dump the full asset list unless the user asks.
 

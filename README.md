@@ -31,7 +31,7 @@ Typical contexts:
 - **Marketplace assets** — clothing, accessories, bodies, makeup, backgrounds, animations
 - **Avatars / styles** — full-body looks on taller (2:3) tiles
 - **Profile photos** — headshot-style tiles
-- **Game thumbnails** — when the slot context calls for scene or experience-style art (e.g. backgrounds)
+- **Game thumbnails** — experience / game-card art *(no assets yet — folder empty)*
 
 Also:
 
@@ -77,7 +77,7 @@ Paths below are relative to **`assets/`**. Major categories each have an RFY pag
   - Lips → `lips/`
   - Faces / Eyelashes / Eyebrows — (no library folders yet)
 
-Also: `profile-photos/` (headshots), `avatars/` (2:3 full-body character tiles).
+Also: `profile-photos/` (headshots), `avatars/` (2:3 full-body character tiles), `game-thumbnails/` (experience cards — **empty for now**).
 
 ## Folders (under `assets/`)
 
@@ -97,6 +97,7 @@ Also: `profile-photos/` (headshots), `avatars/` (2:3 full-body character tiles).
 | `avatars/` | Full-body avatar characters (**2:3** taller tiles) | 28 |
 | `accessories/` | Hats, bags, jewelry, pets, props | 20 |
 | `animation/` | Emotes, animation packs | 20 |
+| `game-thumbnails/` | Game / experience card thumbnails | 0 (empty) |
 
 ## Tile ratios
 
