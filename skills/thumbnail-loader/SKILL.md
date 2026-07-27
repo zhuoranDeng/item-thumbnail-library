@@ -262,7 +262,7 @@ List each slot: **path or data key → major / subcategory (or RFY-mix) → libr
 
 Use context around the slot (check **tile ratio first**, then hierarchy):
 
-- **Tile ratio:** 2:3 taller → `avatars/`; 1:1 → catalog / profile-photos
+- **Tile ratio:** 2:3 taller → `avatars/`; **16:9** (or game/experience card) → `game-thumbnails/`; 1:1 → catalog / profile-photos (or game thumbs **only if user asked for 1:1**)
 - **Page type:** major RFY → mix child subcategories; subcategory page → that subtype only
 - Section/label copy (“Clothing”, “Recommended for you”, “Jackets”, “Emotes”, “Hair”, “Backgrounds”, “Games”)
 - Filename / folder / route (`sweaters`, `t-shirts`, `shirts`, `lips`, `eyes`, `makeup`, `backgrounds`, `game-thumbnails`, `games`, `experiences`, `clothing`, `fullbodies`, `hair`, `heads`, `accessories`, `animation`, `rfy`)
