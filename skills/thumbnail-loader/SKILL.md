@@ -85,9 +85,9 @@ UI-only (not majors above): `profile-photos/`, `avatars/`, `game-thumbnails/`.
 
 Do **not** fill an RFY grid with only one subcategory when the page is the major’s RFY.
 
-**Random mix (not patterned):** Pool all eligible subcategory assets, then shuffle. Do **not** round-robin or interleave in a fixed pattern (e.g. body → hair → head → body → hair → head). The grid should not look manually sequenced by subtype.
+**Random mix (not patterned):** Pool eligible subcategory assets, **dedupe by visual** (same PNG path, or near-identical A/B frames of the same subject), then shuffle. Do **not** round-robin or interleave in a fixed pattern (e.g. body → hair → head → body → hair → head). Do **not** inflate the grid by repeating the same catalog across every subcategory slot.
 
-**Duplicates when supply is short:** Reusing the same thumbnail is allowed if there are more slots than unique assets. Prefer exhausting unique assets first, then reuse. When reusing, **space duplicates** so the same image is not adjacent and ideally sits at least ~3 tiles apart (same row neighbors and near diagonal neighbors should not match). Never place identical thumbs next to each other if another asset can fill the gap.
+**Duplicates when supply is short:** Prefer **unique visuals first**. Only reuse when there are more slots than unique assets. When reusing, space duplicates by at least a full row when possible (~6 tiles in a 6-col grid; never adjacent). Near-identical assets (e.g. two sleeping-kitten frames) count as the **same visual** for dedupe and spacing.
 
 ### Map hierarchy → library folders
 
@@ -275,9 +275,9 @@ Use context around the slot (check **tile ratio first**, then hierarchy):
 For each clear slot:
 
 1. Load category file list from `manifest.json` (or list the folder). If count is 0 (e.g. `game-thumbnails/`), skip and ask — do not substitute another folder.
-2. Build the fill list: unique assets first; if slots remain, reuse assets as needed.
-3. **Major RFY / mixed category:** pool child-subcategory assets and **shuffle randomly** (no round-robin / fixed subtype cadence). Then apply duplicate spacing (~3+ tiles apart; never adjacent if avoidable).
-4. **Subcategory page:** draw from that subtype only; still space duplicates if reusing.
+2. Build the fill list from **unique visuals** first (dedupe by path; collapse near-identical A/B frames). Only then reuse if slots still remain.
+3. **Major RFY / mixed category:** pool child-subcategory assets → **dedupe** → **shuffle randomly** (no round-robin / fixed subtype cadence, no cloning the same 20 assets into every slot). Apply duplicate spacing (~full row / 6+ tiles; never adjacent if avoidable).
+4. **Subcategory page:** draw from that subtype only; still dedupe visuals; space any reuse.
 5. Match vibe when context exists; else any shuffled pick is fine.
 6. **Copy** the PNG into the placeholder path (overwrite stub), **or** update mock data to a served path under the project’s static dir.
 7. **Avatar (2:3):** 2:3 normalize (~88% height); CSS contain + `inset-2`.
@@ -346,6 +346,7 @@ Do **not** ask for confirmation on clear category matches. Do **not** dump the f
 - Bake opaque black plates into **product** 1:1 PNGs — use transparent PNGs over Foundation Shift.200
 - Fill a major RFY grid with only one subcategory when a mix is possible
 - Pattern-interleave mixed RFY grids (round-robin subtypes) — shuffle instead
-- Place duplicate thumbnails adjacent (or closer than ~3 tiles) when another asset can separate them
+- Place duplicate or near-identical thumbnails adjacent (or closer than ~a full row) when another unique visual can separate them
+- Inflate mixed RFY grids by repeating the same asset set once per subcategory slot
 - Leave the avatar preview panel on a mismatched backdrop after a background tile is selected
 - Leave inner padding / letterbox on backgrounds or makeup thumbs (bleed must be edge-to-edge)
