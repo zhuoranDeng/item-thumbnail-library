@@ -27,6 +27,15 @@ Restart Cursor (or reload the window) so the skill appears.
 | Category folders (`shirts/`, `sweaters/`, …) | All catalog PNG thumbnails |
 | `manifest.json` | Asset index (`id`, `category`, `relativePath`) |
 | `skills/thumbnail-loader/SKILL.md` | Cursor **Thumbnail loader** skill |
+| `references/marketplace-home.png` | Visual target for marketplace home rows (RFY / styles / items) |
+
+## Marketplace home reference
+
+`references/marketplace-home.png` is the layout target when filling a marketplace home feed:
+
+1. **Recommended for you** — 1:1 mixed catalog items  
+2. **Trending styles** — 2:3 full-body looks from `avatars/`  
+3. **Trending item** — 1:1 mixed catalog items  
 
 ## Product hierarchy (for RFY / browse)
 
