@@ -79,11 +79,15 @@ UI-only (not majors above): `profile-photos/`, `avatars/`, `game-thumbnails/`.
 
 | Page context | What to fill |
 |--------------|--------------|
-| Major-category RFY (e.g. Clothing RFY, Bodies RFY) | **Mix** assets from that major’s child subcategories across the grid |
+| Major-category RFY (e.g. Clothing RFY, Bodies RFY) | **Random mix** of that major’s child subcategory assets across the grid |
 | Subcategory page / filter (e.g. Jackets, Emotes) | Prefer assets matching that **one** subcategory |
 | Unlabeled generic RFY | Ask, or mix only within the nearest clear major |
 
 Do **not** fill an RFY grid with only one subcategory when the page is the major’s RFY.
+
+**Random mix (not patterned):** Pool all eligible subcategory assets, then shuffle. Do **not** round-robin or interleave in a fixed pattern (e.g. body → hair → head → body → hair → head). The grid should not look manually sequenced by subtype.
+
+**Duplicates when supply is short:** Reusing the same thumbnail is allowed if there are more slots than unique assets. Prefer exhausting unique assets first, then reuse. When reusing, **space duplicates** so the same image is not adjacent and ideally sits at least ~3 tiles apart (same row neighbors and near diagonal neighbors should not match). Never place identical thumbs next to each other if another asset can fill the gap.
 
 ### Map hierarchy → library folders
 
@@ -271,13 +275,13 @@ Use context around the slot (check **tile ratio first**, then hierarchy):
 For each clear slot:
 
 1. Load category file list from `manifest.json` (or list the folder). If count is 0 (e.g. `game-thumbnails/`), skip and ask — do not substitute another folder.
-2. Prefer unused assets in this pass (no duplicate thumbs in the same view unless supply runs out).
-3. **RFY major page:** deliberately vary subcategories across slots.
-4. **Subcategory page:** match that subtype when filenames allow; else best-effort from the parent folder.
-5. Match vibe when context exists; else take next numbered file in category order.
+2. Build the fill list: unique assets first; if slots remain, reuse assets as needed.
+3. **Major RFY / mixed category:** pool child-subcategory assets and **shuffle randomly** (no round-robin / fixed subtype cadence). Then apply duplicate spacing (~3+ tiles apart; never adjacent if avoidable).
+4. **Subcategory page:** draw from that subtype only; still space duplicates if reusing.
+5. Match vibe when context exists; else any shuffled pick is fine.
 6. **Copy** the PNG into the placeholder path (overwrite stub), **or** update mock data to a served path under the project’s static dir.
 7. **Avatar (2:3):** 2:3 normalize (~88% height); CSS contain + `inset-2`.
-8. **Bleed (backgrounds / makeup):** bleed normalize (edge-to-edge); CSS `inset-0 object-cover`. If background: also wire preview pane to the same asset, full-bleed cover.
+8. **Bleed (backgrounds / makeup):** bleed normalize (edge-to-edge, no inner pad); CSS `inset-0 object-cover`. If background: also wire preview pane to the same asset, full-bleed cover.
 9. **Product (other 1:1):** 1:1 product normalize (~90% transparent); Shift.200 tile fill; CSS contain + `inset-2`. Never re-normalize an already-shrunk project file.
 
 Prefer **copy into the project’s public/static placeholder path** so the app keeps working without depending on the library path at runtime.
@@ -341,4 +345,7 @@ Do **not** ask for confirmation on clear category matches. Do **not** dump the f
 - Stack aggressive shrink (e.g. ≤80% content) with large CSS inset (≥12px) on product thumbs
 - Bake opaque black plates into **product** 1:1 PNGs — use transparent PNGs over Foundation Shift.200
 - Fill a major RFY grid with only one subcategory when a mix is possible
+- Pattern-interleave mixed RFY grids (round-robin subtypes) — shuffle instead
+- Place duplicate thumbnails adjacent (or closer than ~3 tiles) when another asset can separate them
 - Leave the avatar preview panel on a mismatched backdrop after a background tile is selected
+- Leave inner padding / letterbox on backgrounds or makeup thumbs (bleed must be edge-to-edge)
