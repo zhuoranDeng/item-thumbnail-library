@@ -349,3 +349,12 @@ Do **not** ask for confirmation on clear category matches. Do **not** dump the f
 - Apply **product** placement (90% shrink / contain / inset / `p-*`) to backgrounds, makeup, or game thumbnails
 - Leave letterbox / inner padding on bleed tiles (backgrounds, makeup, game thumbs) or on the avatar preview backdrop — these must **always** fill edge-to-edge
 - Apply bleed cover rules to product/avatar thumbs
+- Drop raw library thumbs into a product grid without the calibrated product/avatar normalize
+- Normalize from an already-shrunk project PNG (upsample) instead of the library original
+- Stack aggressive shrink (e.g. ≤80% content) with large CSS inset (≥12px) on product thumbs
+- Bake opaque black plates into **product** 1:1 PNGs — use transparent PNGs over Foundation Shift.200
+- Fill a major RFY grid with only one subcategory when a mix is possible
+- Pattern-interleave mixed RFY grids (round-robin subtypes) — shuffle instead
+- Place duplicate or near-identical thumbnails adjacent (or closer than ~a full row) when another unique visual can separate them
+- Inflate mixed RFY grids by repeating the same asset set once per subcategory slot
+- Leave the avatar preview panel on a mismatched backdrop after a background tile is selected
