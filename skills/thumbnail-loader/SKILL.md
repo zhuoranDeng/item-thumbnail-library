@@ -171,15 +171,17 @@ Library files are inconsistently framed. After every copy into a project, **norm
 | Slot | Canvas | Content fit | CSS display |
 |------|--------|-------------|-------------|
 | **2:3** `avatars/` | 840×1260 (or any 2:3) | Character height ~**88%** of canvas; shared top pad; center X | `object-contain object-center` + `inset-2` (~8px) |
-| **1:1** catalog | 420×420 **transparent** PNG | Longer side ~**90%** of canvas; center X/Y | Tile fill = Foundation **Shift.200** dark (`rgba(208,217,251,0.08)`); image `object-contain object-center` + `inset-2` (~8px) |
+| **1:1** catalog (clothing, bodies, accessories, animation, …) | 420×420 **transparent** PNG | Longer side ~**90%** of canvas; center X/Y | Tile fill = Foundation **Shift.200** dark (`rgba(208,217,251,0.08)`); image `object-contain object-center` + `inset-2` (~8px) |
+| **1:1** **bleed** — `backgrounds/`, Makeup (`eyes/`, `lips/`, …) | 420×420 **edge-to-edge** (no content pad) | Content fills the canvas (cover/crop if needed) | `absolute inset-0 object-cover object-center` — **no** inset padding. Selection ring overlays the image. |
 
-**Why these numbers:** ~80% content + `inset-3` looked too small; edge-flush / `object-cover` overlapped the **2px inset selection ring**. **90% + 8px inset** keeps presence without touching the stroke.
+**Why these numbers:** ~80% content + `inset-3` looked too small for product thumbs; edge-flush / `object-cover` overlapped the **2px inset selection ring** for products. **90% + 8px inset** keeps presence without touching the stroke. **Backgrounds and makeup** are photographic / face-fill art — they must **fill the tile and the avatar preview pane** with no letterbox.
 
 #### Display rules (CSS / component)
 
-- Always `object-contain object-center` — **never** `object-cover` on either ratio.
-- Inset must clear any inset selection ring (2px) — padding sits **inside** the ring, not under it.
-- Apply the same contain + inset to **all** tiles in the grid (do not rely on a per-item `padded` flag).
+- Product / avatar thumbs: `object-contain object-center` + light inset — **never** `object-cover` on those.
+- Backgrounds + makeup thumbs: `object-cover` + **zero inset** (`inset-0`).
+- Avatar preview panel background: same asset as the selected background tile; CSS `absolute inset-0 h-full w-full object-cover` so it fills the pane edge-to-edge (no top/bottom letterbox).
+- Inset (when used) must clear any inset selection ring (2px) — padding sits **inside** the ring, not under it.
 - Avoid stacking heavy normalize **and** large CSS inset (double-shrink). If assets are already normalized to the table above, keep CSS inset light (`inset-2`).
 
 #### Normalize from library originals
@@ -264,7 +266,8 @@ For each clear slot:
 5. Match vibe when context exists (e.g. “dress” → dress file); else take next numbered file in category order.
 6. **Copy** the PNG into the placeholder path (overwrite stub), **or** update mock data to a served path that points at a copied/symlinked file under the project’s static dir.
 7. **If the slot is 2:3 / `avatars/`:** after copy from the library, run **Thumbnail placement** 2:3 normalize (~88% character height); CSS `object-contain object-center` + `inset-2`.
-8. **If the slot is 1:1 catalog:** after copy from the library, run **Thumbnail placement** 1:1 normalize (~90% content on **transparent** 420×420); tile CSS background = Foundation **Shift.200**; image `object-contain` + `inset-2`. Never bake opaque black into the PNG. Never re-normalize an already-shrunk project file.
+8. **If the slot is backgrounds or makeup (`eyes/`, `lips/`, …):** copy edge-to-edge (do **not** apply 90% catalog shrink). CSS `inset-0 object-cover`. For backgrounds, selecting a tile also sets the avatar preview panel background to the same asset, full-bleed `object-cover`.
+9. **If the slot is other 1:1 catalog:** after copy from the library, run **Thumbnail placement** 1:1 normalize (~90% content on **transparent** 420×420); tile CSS background = Foundation **Shift.200**; image `object-contain` + `inset-2`. Never bake opaque black into the PNG. Never re-normalize an already-shrunk project file.
 
 Prefer **copy into the project’s public/static placeholder path** so the app keeps working without depending on the library path at runtime.
 
@@ -318,7 +321,8 @@ Do **not** ask for confirmation on clear category matches. Do **not** dump the f
 - Apply accessories into profile-photo slots (or mix categories) when context is clear
 - Use `avatars/` for headshot/profile slots — those belong in `profile-photos/`
 - Put avatars in 1:1 tiles, or non-avatar assets in 2:3 taller tiles, unless the user overrides
-- Use `object-cover` or zero-inset contain so the subject overlaps the selection outline
+- Use `object-cover` or zero-inset contain on **product/avatar** thumbs so the subject overlaps the selection outline (backgrounds/makeup **do** use cover + zero inset)
+- Leave letterbox / padded backgrounds in the avatar preview panel — preview backdrop must be edge-to-edge `object-cover`
 - Drop raw library thumbs into a multi-tile row/grid without normalizing to the calibrated defaults (2:3 ~88% height / 1:1 ~90% box)
 - Normalize from an already-shrunk project PNG (upsample) instead of the library original
 - Stack aggressive shrink (e.g. ≤80% content) with large CSS inset (≥12px) — thumbs look too small
