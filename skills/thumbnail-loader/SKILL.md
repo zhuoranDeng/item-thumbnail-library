@@ -141,22 +141,24 @@ Masters live in `game-thumbnails/` as **16:9** (e.g. 1280×720). Do not store a 
 
 ### Bleed media + avatar preview (hard rule)
 
-**Bleed categories:** `backgrounds/`, Makeup (`eyes/`, `lips/`, …), and **`game-thumbnails/`**.
+**Bleed categories (ALWAYS edge-to-edge):** `backgrounds/`, Makeup (`eyes/`, `lips/`, …), and **`game-thumbnails/`**.
 
-These are full-frame art. They must **fill the thumbnail chrome** — no letterbox, no inset padding, no 90% product shrink.
+These tiles must **always fill the entire thumbnail chrome** — no inner padding, no inset, no letterbox, no 90% product shrink, no Shift.200 “frame” around the art. This is mandatory every time these categories are loaded.
 
 | Surface | Rule |
 |---------|------|
-| Bleed **tile** | PNG content edge-to-edge on the canvas; CSS `absolute inset-0 h-full w-full object-cover object-center`. Selection ring overlays the image (do not inset the img to clear the ring). |
+| Bleed **tile** | PNG edge-to-edge; CSS `absolute inset-0 h-full w-full object-cover object-center` (optional tiny `scale-[1.02]` to kill subpixel gaps). **Never** `inset-2`, `p-*`, or `object-contain` on these. Selection ring overlays the image. |
 | Product / avatar **tile** | Still contain + inset (see placement table) — do **not** apply bleed rules there. |
 | **Avatar preview backdrop** | Only when the user selects a **background** tile: set the preview pane’s background to that **same** asset (or its full-res twin). CSS `absolute inset-0 h-full w-full object-cover object-center` so the scene fills the pane with **no** top/bottom/side gaps. |
 
+When copying bleed assets into a project: do **not** run product 1:1 normalize (~90%). Keep masters edge-filled; for games keep **16:9** masters (center-crop to **1:1** only if the user asked).
+
 Background select checklist:
 
-1. Tile grid uses `backgrounds/` (bleed display).
+1. Tile grid uses `backgrounds/` (bleed display — always full-bleed).
 2. On select / active: preview `src` / `background-image` = that background.
 3. Preview stays in sync with the selected tile id — never leave a default/unrelated backdrop while a background tile is active.
-4. Do not use makeup (or any non-background) assets as the preview environment.
+4. Do not use makeup or game thumbs as the avatar preview environment.
 
 ## Tile aspect ratio (hard rule)
 
@@ -184,7 +186,7 @@ Pick the **placement mode** from category first, then normalize + CSS accordingl
 |------|------------|--------|-------------|-------------|
 | **Avatar** | `avatars/` | 840×1260 (or any 2:3) | Character height ~**88%**; shared top pad; center X | `object-contain object-center` + `inset-2` (~8px) |
 | **Product** | Clothing, Bodies, Accessories, Animations, `profile-photos/`, … | 420×420 **transparent** PNG | Longer side ~**90%**; center X/Y | Tile fill = Foundation **Shift.200** (`rgba(208,217,251,0.08)`); img `object-contain` + `inset-2` |
-| **Bleed** | `backgrounds/`, Makeup (`eyes/`, `lips/`, …), `game-thumbnails/` | Edge-to-edge (16:9 masters for games; 1:1 when asked) | Fill canvas (cover/crop) — **no** 90% shrink | `inset-0 object-cover object-center` — **no** img inset |
+| **Bleed** | `backgrounds/`, Makeup (`eyes/`, `lips/`, …), `game-thumbnails/` — **ALWAYS** | Edge-to-edge (16:9 masters for games; 1:1 when asked) | Fill canvas — **no** 90% shrink, **no** inner pad | `inset-0 object-cover` only — **never** contain/inset/p-* |
 
 **Why:** Product thumbs need a gap from the 2px selection ring (~90% + 8px inset). Bleed art must read as a continuous photo — padding or contain letterboxing looks broken, especially when the same file drives the avatar preview backdrop.
 
