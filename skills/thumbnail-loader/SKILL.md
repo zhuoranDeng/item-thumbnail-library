@@ -85,22 +85,6 @@ UI-only (not majors above): `profile-photos/`, `avatars/`, `game-thumbnails/`.
 
 Do **not** fill an RFY grid with only one subcategory when the page is the major’s RFY.
 
-### Marketplace home layout (image reference)
-
-Canonical visual target: `references/marketplace-home.png` (repo root).
-
-Match this composition when filling a marketplace **home / All** feed:
-
-| Row | Header | Tile ratio | Library source |
-|-----|--------|------------|----------------|
-| 1 | Recommended for you | **1:1** | Mix catalog folders (clothing subtypes, accessories, etc.) — not avatars |
-| 2 | Trending styles | **2:3** taller | `avatars/` only (full-body looks) |
-| 3 | Trending item | **1:1** | Mix catalog folders again (accessories, clothing, …) |
-
-Card chrome under each thumb (do not invent art): **title** (truncate with …) → **creator** (optional verified) → **Robux price**. Tile fill behind 1:1 product media = Foundation **Shift.200** (bleed thumbs still cover edge-to-edge).
-
-When the user says “match the reference”, “marketplace home”, or attaches this screenshot, prefer this row mapping over a generic RFY mix.
-
 ### Map hierarchy → library folders
 
 | Product category | Library folder | Notes |

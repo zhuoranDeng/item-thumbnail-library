@@ -2,6 +2,8 @@
 
 Real Roblox-style thumbnails plus a Cursor skill that **smart-loads** them into placeholders from UI context — marketplace assets, avatars, profile photos, game thumbnails, and more.
 
+![Thumbnail loader in a marketplace feed](preview.png)
+
 Clone once → install the skill → say **Thumbnail loader** in Cursor. Assets ship in the same repo.
 
 ## Install
@@ -43,6 +45,7 @@ Also:
 ```
 item-thumbnail-library/
 ├── README.md
+├── preview.png             ← README preview only
 ├── assets/                 ← all PNGs + manifest (library root)
 │   ├── manifest.json
 │   ├── shirts/
@@ -58,6 +61,7 @@ item-thumbnail-library/
 |------|---------|
 | `assets/` | Catalog PNGs by category + `manifest.json` |
 | `skills/thumbnail-loader/SKILL.md` | Cursor **Thumbnail loader** skill |
+| `preview.png` | README image preview |
 
 ## Product hierarchy (for RFY / browse)
 
