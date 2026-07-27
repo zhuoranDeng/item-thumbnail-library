@@ -8,7 +8,8 @@
     "background": "black",
     "naming": "NN-kebab-description.png",
     "avatarTileRatio": "2:3",
-    "catalogTileRatio": "1:1"
+    "catalogTileRatio": "1:1",
+    "gameThumbnailTileRatio": "16:9"
   },
   "productHierarchy": {
     "Bodies": [
@@ -123,8 +124,10 @@
     },
     "game-thumbnails": {
       "path": "game-thumbnails",
-      "count": 0,
-      "label": "Game / experience thumbnails (empty \u2014 not uploaded yet)"
+      "count": 11,
+      "label": "Game / experience thumbnails (default 16:9; 1:1 when requested)",
+      "defaultAspectRatio": "16:9",
+      "optionalAspectRatio": "1:1"
     }
   },
   "assets": [
@@ -1657,6 +1660,83 @@
       "category": "avatars",
       "filename": "28-white-black-hair-oversized-sweater-boots.png",
       "relativePath": "avatars/28-white-black-hair-oversized-sweater-boots.png"
+    },
+    {
+      "id": "game-thumbnails/01-save-me-puppy-rescue",
+      "category": "game-thumbnails",
+      "filename": "01-save-me-puppy-rescue.png",
+      "relativePath": "game-thumbnails/01-save-me-puppy-rescue.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/02-stargazing-telescope-girl",
+      "category": "game-thumbnails",
+      "filename": "02-stargazing-telescope-girl.png",
+      "relativePath": "game-thumbnails/02-stargazing-telescope-girl.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/03-word-hunt-letter-grid",
+      "category": "game-thumbnails",
+      "filename": "03-word-hunt-letter-grid.png",
+      "relativePath": "game-thumbnails/03-word-hunt-letter-grid.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/04-salted-butter-slime",
+      "category": "game-thumbnails",
+      "filename": "04-salted-butter-slime.png",
+      "relativePath": "game-thumbnails/04-salted-butter-slime.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/05-giant-toast-food-stack",
+      "category": "game-thumbnails",
+      "filename": "05-giant-toast-food-stack.png",
+      "relativePath": "game-thumbnails/05-giant-toast-food-stack.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/06-beat-battle-dj",
+      "category": "game-thumbnails",
+      "filename": "06-beat-battle-dj.png",
+      "relativePath": "game-thumbnails/06-beat-battle-dj.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/07-cook-and-sell",
+      "category": "game-thumbnails",
+      "filename": "07-cook-and-sell.png",
+      "relativePath": "game-thumbnails/07-cook-and-sell.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/08-block-puzzle",
+      "category": "game-thumbnails",
+      "filename": "08-block-puzzle.png",
+      "relativePath": "game-thumbnails/08-block-puzzle.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/09-dumpling-cheek-squish",
+      "category": "game-thumbnails",
+      "filename": "09-dumpling-cheek-squish.png",
+      "relativePath": "game-thumbnails/09-dumpling-cheek-squish.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/10-find-hamster-magnifier",
+      "category": "game-thumbnails",
+      "filename": "10-find-hamster-magnifier.png",
+      "relativePath": "game-thumbnails/10-find-hamster-magnifier.png",
+      "aspectRatio": "16:9"
+    },
+    {
+      "id": "game-thumbnails/11-summer-in-brazil",
+      "category": "game-thumbnails",
+      "filename": "11-summer-in-brazil.png",
+      "relativePath": "game-thumbnails/11-summer-in-brazil.png",
+      "aspectRatio": "16:9"
     }
   ]
 }

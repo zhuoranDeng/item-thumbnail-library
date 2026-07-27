@@ -4,15 +4,15 @@ description: >-
   Thumbnail loader — fills placeholder thumbnails from the bundled
   item-thumbnail-library (`assets/` next to this skill) into projects and
   mocks. Smart-loads by UI context: marketplace assets, avatars, profile
-  photos, backgrounds, makeup, animations; game-thumbnails/ is empty until
-  assets are added (never substitute backgrounds/). Placement: 2:3 →
-  avatars/ contain+inset; 1:1 products → ~90% transparent + Shift.200 +
-  contain+inset; 1:1 bleed (backgrounds + makeup) → edge-to-edge
-  object-cover, no inset; selecting a background fills the avatar preview
-  pane edge-to-edge. Infers folder and auto-applies; asks only when
+  photos, backgrounds, makeup, animations, and game-thumbnails/ (default
+  **16:9**, or **1:1** when the user asks — never substitute backgrounds/).
+  Placement: 2:3 → avatars/ contain+inset; 1:1 products → ~90% transparent +
+  Shift.200 + contain+inset; bleed (backgrounds + makeup + game thumbs) →
+  edge-to-edge object-cover, no inset; selecting a background fills the avatar
+  preview pane edge-to-edge. Infers folder and auto-applies; asks only when
   ambiguous or folder empty. Use when the user says Thumbnail loader,
   thumbnail-loader, load thumbnails, fill placeholders, RFY, backgrounds,
-  makeup, or apply catalog assets.
+  makeup, game thumbnails, or apply catalog assets.
 ---
 
 # Thumbnail loader
@@ -108,7 +108,7 @@ Do **not** fill an RFY grid with only one subcategory when the page is the major
 | Makeup → other subtypes | — | Faces, Eyelashes, Eyebrows — no folders yet |
 | (UI) Profile headshots | `profile-photos/` | Not a catalog major above |
 | (UI) Full-body avatar tiles | `avatars/` | **2:3** only; not a catalog RFY item type |
-| (UI) Game / experience cards | `game-thumbnails/` | Experience discovery art — **empty until uploaded** |
+| (UI) Game / experience cards | `game-thumbnails/` | Default **16:9**; **1:1** only when user asks |
 
 When filling Clothing RFY: mix across Clothing subtype folders (`shirts/`, `t-shirts/`, `sweaters/`, `clothing/`, and future subtype folders).  
 When filling Shirts page: use `shirts/` only.  
@@ -120,7 +120,8 @@ When filling Animations RFY: mix bundles + emotes from `animation/`.
 When filling Backgrounds RFY / page: use `backgrounds/` (bleed + preview sync).  
 When filling Makeup RFY: mix Makeup subtype folders (`eyes/`, `lips/`, and future faces/eyelashes/eyebrows) — bleed.  
 When filling Eyes page: use `eyes/` only.  
-When filling Lips page: use `lips/` only.
+When filling Lips page: use `lips/` only.  
+When filling game / experience cards: use `game-thumbnails/` only (never `backgrounds/`).
 
 ### Game thumbnails ≠ backgrounds (hard rule)
 
@@ -130,16 +131,19 @@ These are **different product types**. Do not conflate them.
 |--|----------------------------------|------------------------------------------|
 | Purpose | Environment behind the avatar in the **customize / try-on preview** | Experience / game **discovery cards** (Charts, Home, continue playing) |
 | UI cues | Category “Backgrounds”, avatar preview pane backdrop, “scene”, “skybox” | “Games”, “Experiences”, game card / tile, experience name + player count |
-| Placement | **Bleed** — edge-to-edge cover; selection updates preview backdrop | Usually wide or card-ratio; still not a background |
-| Library status | Assets present | **Empty** — no PNGs yet |
+| Aspect | Usually **1:1** square tiles | **Default 16:9** landscape; use **1:1** only when the user explicitly asks |
+| Placement | **Bleed** — edge-to-edge cover; selection updates preview backdrop | **Bleed** — edge-to-edge cover in the tile (no product inset / no 90% shrink) |
+| Library | `backgrounds/` | `game-thumbnails/` (assets present) |
 
-**When `game-thumbnails/` is empty:** skip those slots, report them, and ask the user. **Never** fill game-thumbnail slots from `backgrounds/` (or any other folder) as a fallback.
+**Aspect rule:** Prefer **16:9** for game thumbnails. Switch to **1:1** only if the user says 1:1 / square / “crop square”. When serving 1:1, center-crop the 16:9 master (cover) — do not letterbox. Never fill game-thumbnail slots from `backgrounds/`.
+
+Masters live in `game-thumbnails/` as **16:9** (e.g. 1280×720). Do not store a separate 1:1 library copy unless the user asks to generate one.
 
 ### Bleed media + avatar preview (hard rule)
 
-**Bleed categories:** `backgrounds/` and Makeup (`eyes/`, `lips/`, and future makeup folders).
+**Bleed categories:** `backgrounds/`, Makeup (`eyes/`, `lips/`, …), and **`game-thumbnails/`**.
 
-These are full-frame photographic / face-fill art. They must **fill the thumbnail chrome** — no letterbox, no inset padding, no 90% product shrink.
+These are full-frame art. They must **fill the thumbnail chrome** — no letterbox, no inset padding, no 90% product shrink.
 
 | Surface | Rule |
 |---------|------|
@@ -159,7 +163,8 @@ Background select checklist:
 | Tile ratio | Category |
 |------------|----------|
 | **2:3** (taller portrait) | Always `avatars/` |
-| **1:1** (square) | Catalog items (Bodies, Clothing, Accessories, Animations, Makeup, Backgrounds) and `profile-photos/` |
+| **16:9** (landscape) | Default for `game-thumbnails/` |
+| **1:1** (square) | Catalog items (Bodies, Clothing, Accessories, Animations, Makeup, Backgrounds), `profile-photos/`, and `game-thumbnails/` **only when user asks for 1:1** |
 
 How to detect ratio:
 
@@ -179,7 +184,7 @@ Pick the **placement mode** from category first, then normalize + CSS accordingl
 |------|------------|--------|-------------|-------------|
 | **Avatar** | `avatars/` | 840×1260 (or any 2:3) | Character height ~**88%**; shared top pad; center X | `object-contain object-center` + `inset-2` (~8px) |
 | **Product** | Clothing, Bodies, Accessories, Animations, `profile-photos/`, … | 420×420 **transparent** PNG | Longer side ~**90%**; center X/Y | Tile fill = Foundation **Shift.200** (`rgba(208,217,251,0.08)`); img `object-contain` + `inset-2` |
-| **Bleed** | `backgrounds/`, Makeup (`eyes/`, `lips/`, …) | 420×420 **edge-to-edge** | Fill canvas (cover/crop if needed) — **no** 90% shrink | `inset-0 object-cover object-center` — **no** img inset |
+| **Bleed** | `backgrounds/`, Makeup (`eyes/`, `lips/`, …), `game-thumbnails/` | Edge-to-edge (16:9 masters for games; 1:1 when asked) | Fill canvas (cover/crop) — **no** 90% shrink | `inset-0 object-cover object-center` — **no** img inset |
 
 **Why:** Product thumbs need a gap from the 2px selection ring (~90% + 8px inset). Bleed art must read as a continuous photo — padding or contain letterboxing looks broken, especially when the same file drives the avatar preview backdrop.
 
@@ -281,7 +286,7 @@ For each clear slot:
 5. Match vibe when context exists; else any shuffled pick is fine.
 6. **Copy** the PNG into the placeholder path (overwrite stub), **or** update mock data to a served path under the project’s static dir.
 7. **Avatar (2:3):** 2:3 normalize (~88% height); CSS contain + `inset-2`.
-8. **Bleed (backgrounds / makeup):** bleed normalize (edge-to-edge, no inner pad); CSS `inset-0 object-cover`. If background: also wire preview pane to the same asset, full-bleed cover.
+8. **Bleed (backgrounds / makeup / game-thumbnails):** bleed normalize (edge-to-edge); CSS `inset-0 object-cover`. Games default **16:9**; crop to **1:1** only if user asked. If background: also wire preview pane to the same asset, full-bleed cover.
 9. **Product (other 1:1):** 1:1 product normalize (~90% transparent); Shift.200 tile fill; CSS contain + `inset-2`. Never re-normalize an already-shrunk project file.
 
 Prefer **copy into the project’s public/static placeholder path** so the app keeps working without depending on the library path at runtime.
@@ -325,7 +330,7 @@ Ask **only** when:
 - Category cannot be inferred
 - Multiple majors could fit the same slot (especially **backgrounds vs game thumbnails**)
 - Overwriting would replace a non-placeholder (looks like real unique art) — confirm first
-- Library folder is empty or missing (Makeup → Faces / Eyelashes / Eyebrows; **Game thumbnails** → `game-thumbnails/`)
+- Library folder is empty or missing (Makeup → Faces / Eyelashes / Eyebrows)
 
 Do **not** ask for confirmation on clear category matches. Do **not** dump the full asset list unless the user asks.
 
@@ -337,7 +342,8 @@ Do **not** ask for confirmation on clear category matches. Do **not** dump the f
 - Apply accessories into profile-photo slots (or mix categories) when context is clear
 - Use `avatars/` for headshot/profile slots — those belong in `profile-photos/`
 - Put avatars in 1:1 tiles, or non-avatar assets in 2:3 taller tiles, unless the user overrides
-- Fill **game-thumbnail** slots from `backgrounds/` (or any other folder) when `game-thumbnails/` is empty
+- Fill **game-thumbnail** slots from `backgrounds/` (or any other folder)
+- Serve game thumbnails as **1:1** unless the user asked for square / 1:1
 - Apply **product** placement (90% shrink / contain / inset) to **bleed** categories, or bleed cover to product/avatar thumbs
 - Leave letterbox / padded bands on bleed tiles or on the avatar preview backdrop
 - Drop raw library thumbs into a product grid without the calibrated product/avatar normalize
